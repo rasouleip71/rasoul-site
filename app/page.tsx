@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Headshot from "../public/headshot_original.jpg";
+import Headshot from "../public/headshot.jpg";
 
 const contentLinks = [
   {
@@ -27,9 +27,9 @@ export default function Home() {
         <Image
           src={Headshot}
           alt="Portrait of Rasoul Foroughfard"
-          width={300}
-          height={300}
-          quality={95}
+          width={320}
+          height={320}
+          quality={100}
           priority
           className="rounded-full border border-neutral-200 object-cover"
         />
