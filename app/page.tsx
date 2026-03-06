@@ -31,7 +31,7 @@ export default function Home() {
           height={360}
           quality={100}
           priority
-          className="rounded-full border border-neutral-200 object-cover"
+          className="rounded-full border border-neutral-200 object-cover object-top"
         />
 
         <div className="space-y-2">
