@@ -1,4 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body { @apply text-neutral-800 bg-white; }
+
+:root {
+  --bg: #f6f7f8;
+  --surface: #ffffff;
+  --text: #121212;
+  --muted: #5b6068;
+  --border: #e3e6ea;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply antialiased;
+  background: radial-gradient(circle at top right, #eef5ff 0%, var(--bg) 30%, var(--bg) 100%);
+  color: var(--text);
+}
+
+a {
+  @apply underline underline-offset-4;
+}
+
+h1 {
+  @apply text-4xl font-semibold tracking-tight;
+}
+
+h2 {
+  @apply text-2xl font-semibold mt-8 mb-3;
+}
+
+h3 {
+  @apply text-xl font-semibold mt-6 mb-2;
+}
+
+@layer components {
+  .site-shell {
+    @apply min-h-screen;
+  }
+
+  .container {
+    @apply max-w-5xl mx-auto px-4;
+  }
+
+  .card {
+    @apply rounded-2xl border;
+    border-color: var(--border);
+    background: color-mix(in srgb, var(--surface) 96%, #dbeafe 4%);
+  }
+
+  .card-pad {
+    @apply p-5 sm:p-6;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border px-3 py-1.5 text-sm font-medium no-underline transition-colors;
+    border-color: var(--border);
+    color: var(--text);
+    background: var(--surface);
+  }
+
+  .small {
+    @apply text-sm;
+    color: var(--muted);
+  }
+
+  .list {
+    @apply list-disc ml-6 space-y-1;
+  }
+
+  .hr {
+    @apply my-6 border-t;
+    border-color: var(--border);
+  }
+}
