@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Headshot from "../public/headshot_original.jpg";
+import Headshot from "../public/headshot_padded.jpg";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         src={Headshot}
         alt="Rasoul Foroughfard"
         width={540}
-        height={810}
+        height={900}
         quality={100}
         priority
         className="hero-image"
