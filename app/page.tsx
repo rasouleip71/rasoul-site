@@ -7,8 +7,8 @@ export default function Home() {
       <Image
         src={Headshot}
         alt="Rasoul Foroughfard"
-        width={735}
-        height={315}
+        width={540}
+        height={810}
         quality={100}
         priority
         className="hero-image"
