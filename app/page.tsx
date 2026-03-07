@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Headshot from "../public/headshot_original.jpg";
 
 export default function Home() {
@@ -8,32 +7,24 @@ export default function Home() {
       <Image
         src={Headshot}
         alt="Rasoul Foroughfard"
-        width={700}
-        height={500}
+        width={980}
+        height={420}
         quality={100}
         priority
         className="hero-image"
       />
 
       <h1 className="page-title">Rasoul Foroughfard</h1>
-      <p className="subtitle">PhD Candidate in Finance at Arizona State University</p>
       <p className="bio">
-        I study asset pricing with a focus on industry-level return predictability, investor beliefs, and demand
-        systems. My work combines macroeconomic data, firm fundamentals, and institutional holdings to understand
-        variation in expected returns across industries.
+        I am a PhD Candidate in Finance at Arizona State University. I study asset pricing with a focus on
+        industry-level return predictability, investor beliefs, and demand systems.
       </p>
-
-      <div className="section-links" aria-label="Main sections">
-        <Link className="section-link" href="/teaching">
-          Teaching
-        </Link>
-        <Link className="section-link" href="/research">
-          Research
-        </Link>
-        <Link className="section-link" href="/life">
-          Life
-        </Link>
-      </div>
+      <p className="bio">
+        My research combines macroeconomic data, firm fundamentals, and institutional holdings to understand
+        heterogeneity in expected returns across industries.
+      </p>
+      <p className="bio">Research interests: Asset Pricing, Information Economics, Financial Markets</p>
+      <p className="bio">Contact: rforough@asu.edu</p>
     </section>
   );
 }
