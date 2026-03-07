@@ -109,3 +109,20 @@ a {
   color: var(--muted);
   font-size: 0.95rem;
 }
+
+.profile-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .profile-row {
+    grid-template-columns: 420px 1fr;
+  }
+}
+
+.profile-row .hero-image {
+  margin-bottom: 0;
+}
