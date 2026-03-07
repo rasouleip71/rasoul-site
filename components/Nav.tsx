@@ -1,46 +1,33 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home" },
+  { href: "/cv", label: "CV" },
+  { href: "/publications", label: "Publications" },
   { href: "/research", label: "Research" },
   { href: "/teaching", label: "Teaching" },
   { href: "/life", label: "Life" },
-  { href: "/publications", label: "Publications" },
-  { href: "/cv", label: "CV" },
   { href: "/contact", label: "Contact" },
 ];
 
 export function Nav() {
   const pathname = usePathname() || "/";
-  const activeMatch = (href: string) => {
-    if (href === "/") return pathname === "/";
-    return pathname === href || pathname.startsWith(href + "/");
-  };
 
   return (
-    <div className="card">
-      <div className="card-pad flex flex-wrap items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3 no-underline">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white font-semibold">
-            RF
-          </span>
-          <span className="font-semibold">Rasoul Foroughfard</span>
+    <div className="site-nav">
+      <div className="container site-nav-inner">
+        <Link href="/" className="site-title">
+          Rasoul Foroughfard
         </Link>
-        <nav className="flex flex-wrap items-center gap-2">
+
+        <nav className="nav-links">
           {links.map((l) => {
-            const active = activeMatch(l.href);
+            const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
             return (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={
-                  active
-                    ? "chip bg-neutral-900 text-white border-neutral-900"
-                    : "chip hover:border-neutral-300"
-                }
-              >
+              <Link key={l.href} href={l.href} className={active ? "nav-link active" : "nav-link"}>
                 {l.label}
               </Link>
             );
