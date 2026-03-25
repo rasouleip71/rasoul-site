@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Headshot from "../public/headshot_padded.jpg";
 
+const bioText =
+  "I am a PhD student in Finance at Arizona State University. My research focuses on asset pricing, with an emphasis on forecasting market and industry returns. I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level economic data across both cross-sectional and time-series settings.";
+
 const focusAreas = [
   "Return predictability across cross-sectional and time-series settings",
   "Factor design and portfolio construction from predictive signals",
@@ -33,15 +36,7 @@ export default function Home() {
 
         <div>
           <h1 className="page-title">Rasoul Foroughfard</h1>
-          <p className="bio">
-            I am a finance researcher focused on return predictability, factor design, and portfolio construction.
-            My work develops and tests predictive signals from firm fundamentals, investor holdings, and
-            industry-level economic data across both cross-sectional and time-series settings.
-          </p>
-          <p className="bio">
-            I build indices and latent-demand measures to identify informed trading, flow-driven mispricing, and
-            systematic return patterns.
-          </p>
+          <p className="bio">{bioText}</p>
           <p className="bio">Contact: rforough@asu.edu</p>
         </div>
       </div>
