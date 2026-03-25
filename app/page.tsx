@@ -1,6 +1,22 @@
 import Image from "next/image";
 import Headshot from "../public/headshot_padded.jpg";
 
+const focusAreas = [
+  "Return predictability across cross-sectional and time-series settings",
+  "Factor design and portfolio construction from predictive signals",
+  "Demand and holdings-based signal extraction",
+  "Industry-level forecasting using macro-fundamental data",
+];
+
+const signals = [
+  "Buyback-to-dividend ratio: capital allocation signal linked to risky cash flows and cross-sectional returns",
+  "Previous-winner holdings index: flow-based signal tied to momentum continuation",
+  "Predictive-winner demand measure: demand-based return forecasting from recent investor performance",
+  "Industry-expert holdings index: informed-holdings signal for industry-level return prediction",
+  "Industry fundamentals engine: employment, production, and sales data for sector-level signal extraction",
+  "Latent-demand portfolios: portfolio formation based on hidden demand pressure",
+];
+
 export default function Home() {
   return (
     <section className="page-wrap">
@@ -18,17 +34,35 @@ export default function Home() {
         <div>
           <h1 className="page-title">Rasoul Foroughfard</h1>
           <p className="bio">
-            I am a PhD Candidate in Finance at Arizona State University. I study asset pricing with a focus on
-            industry-level return predictability, investor beliefs, and demand systems.
+            I am a finance researcher focused on return predictability, factor design, and portfolio construction.
+            My work develops and tests predictive signals from firm fundamentals, investor holdings, and
+            industry-level economic data across both cross-sectional and time-series settings.
           </p>
           <p className="bio">
-            My research combines macroeconomic data, firm fundamentals, and institutional holdings to understand
-            heterogeneity in expected returns across industries.
+            I build indices and latent-demand measures to identify informed trading, flow-driven mispricing, and
+            systematic return patterns.
           </p>
-          <p className="bio">Research interests: Asset Pricing, Information Economics, Financial Markets</p>
           <p className="bio">Contact: rforough@asu.edu</p>
         </div>
       </div>
+
+      <section className="content-section">
+        <h2 className="section-title">Research Focus</h2>
+        <ul className="list">
+          {focusAreas.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="content-section">
+        <h2 className="section-title">Signals I Build</h2>
+        <ul className="list">
+          {signals.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
     </section>
   );
 }

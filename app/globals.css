@@ -126,3 +126,17 @@ a {
 .profile-row .hero-image {
   margin-bottom: 0;
 }
+
+.content-section {
+  margin-top: 28px;
+}
+
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.list strong {
+  font-weight: 600;
+}
