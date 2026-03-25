@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Headshot from "../public/headshot_padded.jpg";
+import Headshot from "../public/headshot_tight.jpg";
 
 const bioText =
   "I am a PhD candidate in Finance at Arizona State University. My research focuses on asset pricing, with an emphasis on forecasting market and industry returns. I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level economic data across both cross-sectional and time-series settings.";
@@ -27,8 +27,8 @@ export default function Home() {
         <Image
           src={Headshot}
           alt="Rasoul Foroughfard"
-          width={540}
-          height={900}
+          width={500}
+          height={639}
           quality={100}
           priority
           className="hero-image"
