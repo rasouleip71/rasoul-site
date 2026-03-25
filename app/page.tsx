@@ -2,7 +2,7 @@ import Image from "next/image";
 import Headshot from "../public/headshot_padded.jpg";
 
 const bioText =
-  "I am a PhD student in Finance at Arizona State University. My research focuses on asset pricing, with an emphasis on forecasting market and industry returns. I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level economic data across both cross-sectional and time-series settings.";
+  "I am a PhD candidate in Finance at Arizona State University. My research focuses on asset pricing, with an emphasis on forecasting market and industry returns. I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level economic data across both cross-sectional and time-series settings.";
 
 const focusAreas = [
   "Return predictability across cross-sectional and time-series settings",
