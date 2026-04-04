@@ -56,7 +56,7 @@ export default function Home() {
           className="hero-image"
         />
 
-        <div>
+        <div className="intro-col">
           <h2 id="home" className="section-title">
             Welcome
           </h2>
@@ -68,18 +68,14 @@ export default function Home() {
             I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level
             economic data across both cross-sectional and time-series settings.
           </p>
+          <p className="bio contact-inline">
+            Email: <a className="section-link" href="mailto:rossforoughi@gmail.com">rossforoughi@gmail.com</a> |{" "}
+            Phone: +1 (806) 500-1988 |{" "}
+            <a className="section-link" href="/CV_Rasoul.pdf" target="_blank" rel="noopener noreferrer">CV</a> |{" "}
+            <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          </p>
         </div>
       </div>
-
-      <section id="contact" className="content-section">
-        <h2 className="section-title">Contact</h2>
-        <p className="bio">
-          Email: <a className="section-link" href="mailto:rossforoughi@gmail.com">rossforoughi@gmail.com</a> |{" "}
-          Phone: +1 (806) 500-1988 |{" "}
-          <a className="section-link" href="/CV_Rasoul.pdf" target="_blank" rel="noopener noreferrer">CV</a> |{" "}
-          <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        </p>
-      </section>
 
       <section id="working-papers" className="content-section">
         <h2 className="section-title">Working Papers</h2>

@@ -117,9 +117,23 @@ a {
   align-items: start;
 }
 
+.intro-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-inline {
+  margin-top: 12px;
+}
+
 @media (min-width: 900px) {
   .profile-row {
     grid-template-columns: 420px 1fr;
+  }
+
+  .contact-inline {
+    margin-top: auto;
+    padding-top: 12px;
   }
 }
 
