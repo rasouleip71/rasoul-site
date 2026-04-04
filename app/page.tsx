@@ -70,9 +70,10 @@ export default function Home() {
           </p>
           <p className="bio contact-inline">
             Email: <a className="section-link" href="mailto:rossforoughi@gmail.com">rossforoughi@gmail.com</a> |{" "}
-            Phone: +1 (806) 500-1988 |{" "}
             <a className="section-link" href="/CV_Rasoul.pdf" target="_blank" rel="noopener noreferrer">CV</a> |{" "}
             <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <br />
+            Phone: +1 (806) 500-1988
           </p>
         </div>
       </div>
