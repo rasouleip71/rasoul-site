@@ -1,28 +1,32 @@
 import Image from "next/image";
 import Headshot from "../public/headshot_tighter2.jpg";
 
-const bioText =
-  "I am a PhD candidate in Finance at Arizona State University. My research focuses on asset pricing, with an emphasis on forecasting market and industry returns. I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level economic data across both cross-sectional and time-series settings.";
-
-const focusAreas = [
-  "Return predictability across cross-sectional and time-series settings",
-  "Factor design and portfolio construction from predictive signals",
-  "Demand and holdings-based signal extraction",
-  "Industry-level forecasting using macro-fundamental data",
+const publications = [
+  {
+    title: "Predictability of Returns with Buyback Cash Flows",
+    venue: "Asian Academy of Management Journal of Accounting and Finance (2024)",
+    coauthors: "Rasoul Foroughfard",
+  },
+  {
+    title: "The Effect of Relationship Lending on Loan Contract Terms",
+    venue: "Journal of Money and Economy 14(2): 133-157 (2019)",
+    coauthors: "Rasoul Foroughfard, M. H. Rahmati",
+  },
 ];
 
-const signals = [
-  "Buyback-to-dividend ratio: capital allocation signal linked to risky cash flows and cross-sectional returns",
-  "Previous-winner holdings index: flow-based signal tied to momentum continuation",
-  "Predictive-winner demand measure: demand-based return forecasting from recent investor performance",
-  "Industry-expert holdings index: informed-holdings signal for industry-level return prediction",
-  "Industry fundamentals engine: employment, production, and sales data for sector-level signal extraction",
-  "Latent-demand portfolios: portfolio formation based on hidden demand pressure",
+const workingPapers = [
+  "On the Predictability of Industry Returns (Job Market Paper)",
+  "Holdings-Based Expectations and Revealed Industry Expectations",
+  "Investor Demand, Predictive Winners, and Return Forecasting",
+  "Industry Expert Holdings and Industry-Level Return Predictability",
+  "Latent Demand Portfolios and Return Dynamics",
 ];
 
 export default function Home() {
   return (
     <section className="page-wrap">
+      <h1 className="page-title">Rasoul Foroughfard</h1>
+
       <div className="profile-row">
         <Image
           src={Headshot}
@@ -35,28 +39,56 @@ export default function Home() {
         />
 
         <div>
-          <h1 className="page-title">Rasoul Foroughfard</h1>
-          <p className="bio">{bioText}</p>
-          <p className="bio">Contact: rforough@asu.edu</p>
+          <h2 id="home" className="section-title">
+            Welcome
+          </h2>
+          <p className="bio">
+            I am a PhD candidate in Finance at Arizona State University. My research focuses on asset pricing, with an
+            emphasis on forecasting market and industry returns.
+          </p>
+          <p className="bio">
+            I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level
+            economic data across both cross-sectional and time-series settings.
+          </p>
         </div>
       </div>
 
-      <section className="content-section">
-        <h2 className="section-title">Research Focus</h2>
+      <section id="contact" className="content-section">
+        <h2 className="section-title">Contact</h2>
+        <p className="bio">
+          Email: <a className="section-link" href="mailto:rforough@asu.edu">rforough@asu.edu</a> |{" "}
+          <a className="section-link" href="/CV_Rasoul.pdf" target="_blank" rel="noopener noreferrer">CV</a> |{" "}
+          <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        </p>
+      </section>
+
+      <section id="publications" className="content-section">
+        <h2 className="section-title">Publications</h2>
         <ul className="list">
-          {focusAreas.map((item) => (
-            <li key={item}>{item}</li>
+          {publications.map((p) => (
+            <li key={p.title}>
+              <strong>{p.title}</strong>
+              <br />
+              {p.venue}. {p.coauthors}.
+            </li>
           ))}
         </ul>
       </section>
 
-      <section className="content-section">
-        <h2 className="section-title">Signals I Build</h2>
+      <section id="working-papers" className="content-section">
+        <h2 className="section-title">Working Papers</h2>
         <ul className="list">
-          {signals.map((item) => (
-            <li key={item}>{item}</li>
+          {workingPapers.map((paper) => (
+            <li key={paper}>{paper}</li>
           ))}
         </ul>
+      </section>
+
+      <section id="teaching" className="content-section">
+        <h2 className="section-title">Teaching</h2>
+        <p className="bio">Arizona State University</p>
+        <p className="bio">FIN 421 - Security Analysis and Portfolio Management</p>
+        <p className="bio">Principles of Economics (TA), Texas Tech University</p>
       </section>
     </section>
   );

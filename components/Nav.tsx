@@ -1,36 +1,28 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/cv", label: "CV" },
-  { href: "/research", label: "Research" },
-  { href: "/discussion", label: "Discussion" },
-  { href: "/teaching", label: "Teaching and Service" },
+  { href: "/#home", label: "Home" },
+  { href: "/CV_Rasoul.pdf", label: "CV" },
+  { href: "/#publications", label: "Publications" },
+  { href: "/#working-papers", label: "Working Papers" },
+  { href: "/#teaching", label: "Teaching" },
 ];
 
 export function Nav() {
-  const pathname = usePathname() || "/";
-
   return (
     <header className="site-nav">
       <div className="container">
         <div className="site-title-row">
-          <Link href="/" className="site-title">
-            Rasoul Foroughfard
-          </Link>
+          <Link href="/" className="site-title">Rasoul Foroughfard</Link>
         </div>
         <nav className="nav-links" aria-label="Main">
-          {links.map((l) => {
-            const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
-            return (
-              <Link key={l.href} href={l.href} className={active ? "nav-link active" : "nav-link"}>
-                {l.label}
-              </Link>
-            );
-          })}
+          {links.map((l) => (
+            <a key={l.href} href={l.href} className="nav-link">
+              {l.label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
