@@ -15,11 +15,31 @@ const publications = [
 ];
 
 const workingPapers = [
-  "Who changes their demand for equities during macroeconomic shocks?",
-  "Quarterly Excess Demand and Future Returns",
-  "Industry ETF Leading Indicator",
-  "Industry News and Future Equity Returns",
-  "Cash Flow Cyclicality Index",
+  {
+    title: "Who changes their demand for equities during macroeconomic shocks?",
+    summary:
+      "Studies how investor types adjust equity demand across macro cycles using GDP growth, inflation, rates, exchange rates, unemployment, and default-premium indicators.",
+  },
+  {
+    title: "Quarterly Excess Demand and Future Returns",
+    summary:
+      "Builds stock-level excess-demand signals from institutional holdings to form return-predictive strategies across horizons from quarters to five years.",
+  },
+  {
+    title: "Industry ETF Leading Indicator",
+    summary:
+      "Develops an industry-level leading indicator from quarterly 13F holdings by identifying expert investors and aggregating their positions.",
+  },
+  {
+    title: "Industry News and Future Equity Returns",
+    summary:
+      "Constructs leading return signals for aggregate markets using real-time industry employment, sales, and inventory information.",
+  },
+  {
+    title: "Cash Flow Cyclicality Index",
+    summary:
+      "Creates a business-cycle exposure factor using the buyback-to-dividend ratio to separate temporary from persistent cash-flow components.",
+  },
 ];
 
 export default function Home() {
@@ -80,7 +100,11 @@ export default function Home() {
         <h2 className="section-title">Working Papers</h2>
         <ul className="list">
           {workingPapers.map((paper) => (
-            <li key={paper}>{paper}</li>
+            <li key={paper.title}>
+              <strong>{paper.title}</strong>
+              <br />
+              {paper.summary}
+            </li>
           ))}
         </ul>
       </section>
