@@ -1,21 +1,15 @@
 import Image from "next/image";
 import Headshot from "../public/headshot_tighter2.jpg";
 
-const publications = [
-  {
-    title: "Predictability of Returns with Buyback Cash Flows",
-    venue: "Asian Academy of Management Journal of Accounting and Finance (2024)",
-    coauthors: "Rasoul Foroughfard",
-    explanation:
-      "Uses the buyback-to-dividend ratio to capture cash-flow cyclicality and predict cross-sectional differences in stock returns.",
-  },
-  {
-    title: "The Effect of Relationship Lending on Loan Contract Terms",
-    venue: "Journal of Money and Economy 14(2): 133-157 (2019)",
-    coauthors: "Rasoul Foroughfard, M. H. Rahmati",
-    explanation:
-      "Examines how lending relationships shape loan pricing and contract design across borrowers.",
-  },
+const skills = [
+  "Forecasting and nowcasting",
+  "Static and dynamic factor models",
+  "Time-series and panel econometrics",
+  "Kalman filtering and smoothing",
+  "Dimensionality reduction (PCA, PLS)",
+  "Demand-system modeling and alpha generation",
+  "Data: CRSP, Compustat, WRDS, 13F, FRED, Bloomberg",
+  "Python (pandas, statsmodels, scikit-learn), Stata",
 ];
 
 const workingPapers = [
@@ -103,29 +97,19 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="publications" className="content-section">
-        <h2 className="section-title">Publications</h2>
+      <section id="teaching" className="content-section">
+        <h2 className="section-title">Teaching Experience</h2>
         <ul className="list">
-          {publications.map((p) => (
-            <li key={p.title}>
-              <span className="paper-title">{p.title}</span>
-              <ul className="sublist">
-                <li>
-                  <strong>Citation:</strong> {p.venue}. {p.coauthors}.
-                </li>
-                <li>
-                  <strong>Explanation:</strong> {p.explanation}
-                </li>
-              </ul>
-            </li>
-          ))}
+          <li>Arizona State University - FIN 421: Security Analysis and Portfolio Management (Instructor)</li>
         </ul>
       </section>
 
-      <section id="teaching" className="content-section">
-        <h2 className="section-title">Teaching</h2>
+      <section id="skills" className="content-section">
+        <h2 className="section-title">Skills</h2>
         <ul className="list">
-          <li>Arizona State University - FIN 421: Security Analysis and Portfolio Management (Instructor)</li>
+          {skills.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
         </ul>
       </section>
     </section>
