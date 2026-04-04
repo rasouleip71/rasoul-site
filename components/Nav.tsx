@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const links = [
   { href: "/#home", label: "Home" },
-  { href: "/CV_Rasoul.pdf", label: "CV" },
+  { href: "/cv", label: "CV" },
   { href: "/#publications", label: "Publications" },
   { href: "/#working-papers", label: "Working Papers" },
   { href: "/#teaching", label: "Teaching" },

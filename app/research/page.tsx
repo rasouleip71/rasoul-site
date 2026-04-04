@@ -2,34 +2,29 @@ export const metadata = { title: "Research" };
 
 const projects = [
   {
-    title: "Buyback-to-Dividend Ratio",
+    title: "Who changes their demand for equities during macroeconomic shocks?",
     summary:
-      "Capital allocation signal designed to identify firms with investment opportunities and risky cash flows; predicts the cross-section of stock returns.",
+      "I study how investors adjust equity demand across macroeconomic cycles using GDP growth, inflation, interest rates, exchange rates, unemployment, and default-premium cycles, with substantial heterogeneity across investor types.",
   },
   {
-    title: "Previous-Winner Holdings Index",
+    title: "Quarterly Excess Demand and Future Returns",
     summary:
-      "Flow-based signal that is high when stocks are held by previous winners; linked to stronger average subsequent returns.",
+      "Construct stock-level excess-demand signals from institutional holdings to build return-predictive investment strategies from quarterly to five-year horizons.",
   },
   {
-    title: "Predictive-Winner Demand Framework",
+    title: "Industry ETF Leading Indicator",
     summary:
-      "Demand-based return prediction where winners are defined by recent predictive performance.",
+      "Developed a framework to extract real-time industry signals from quarterly 13F holdings by identifying expert investors and aggregating positions into a predictive industry index.",
   },
   {
-    title: "Industry-Expert Holdings Index",
+    title: "Industry News and Future Equity Returns",
     summary:
-      "Industry-level return forecasting using observed holdings of identified industry experts.",
+      "Developed leading indicators for aggregate equity markets using real-time industry-level data on employment, sales, and inventories.",
   },
   {
-    title: "Industry Fundamentals Dataset",
+    title: "Cash Flow Cyclicality Index",
     summary:
-      "Comprehensive dataset of industry employment, production, and sales used to extract which industries are systematically informative about future returns.",
-  },
-  {
-    title: "Latent-Demand Portfolios",
-    summary:
-      "Portfolio construction based on latent demand to identify who drives demand pressure and return dynamics.",
+      "Constructed a factor capturing firm-level business-cycle exposure using the buyback-to-dividend ratio.",
   },
 ];
 
@@ -38,8 +33,8 @@ export default function Research() {
     <section className="page-wrap">
       <h1 className="page-title">Research</h1>
       <p className="bio">
-        My research program centers on return prediction through signal engineering, portfolio formation, and demand
-        analysis across cross-sectional and time-series settings.
+        My research program studies equity demand, business-cycle dynamics, and return predictability through signal
+        engineering and portfolio formation.
       </p>
 
       <h2 className="section-title">Current Signal and Portfolio Projects</h2>
