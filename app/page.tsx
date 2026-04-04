@@ -15,11 +15,11 @@ const publications = [
 ];
 
 const workingPapers = [
-  "On the Predictability of Industry Returns (Job Market Paper)",
-  "Holdings-Based Expectations and Revealed Industry Expectations",
-  "Investor Demand, Predictive Winners, and Return Forecasting",
-  "Industry Expert Holdings and Industry-Level Return Predictability",
-  "Latent Demand Portfolios and Return Dynamics",
+  "Who changes their demand for equities during macroeconomic shocks?",
+  "Quarterly Excess Demand and Future Returns",
+  "Industry ETF Leading Indicator",
+  "Industry News and Future Equity Returns",
+  "Cash Flow Cyclicality Index",
 ];
 
 export default function Home() {
