@@ -2,14 +2,6 @@
 
 import Link from "next/link";
 
-const links = [
-  { href: "/#home", label: "Home" },
-  { href: "/cv", label: "CV" },
-  { href: "/#working-papers", label: "Working Papers" },
-  { href: "/#publications", label: "Publications" },
-  { href: "/#teaching", label: "Teaching" },
-];
-
 export function Nav() {
   return (
     <header className="site-nav">
@@ -17,13 +9,6 @@ export function Nav() {
         <div className="site-title-row">
           <Link href="/" className="site-title">Rasoul Foroughfard</Link>
         </div>
-        <nav className="nav-links" aria-label="Main">
-          {links.map((l) => (
-            <a key={l.href} href={l.href} className="nav-link">
-              {l.label}
-            </a>
-          ))}
-        </nav>
       </div>
     </header>
   );
