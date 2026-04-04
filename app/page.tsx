@@ -6,17 +6,21 @@ const publications = [
     title: "Predictability of Returns with Buyback Cash Flows",
     venue: "Asian Academy of Management Journal of Accounting and Finance (2024)",
     coauthors: "Rasoul Foroughfard",
+    explanation:
+      "Uses the buyback-to-dividend ratio to capture cash-flow cyclicality and predict cross-sectional differences in stock returns.",
   },
   {
     title: "The Effect of Relationship Lending on Loan Contract Terms",
     venue: "Journal of Money and Economy 14(2): 133-157 (2019)",
     coauthors: "Rasoul Foroughfard, M. H. Rahmati",
+    explanation:
+      "Examines how lending relationships shape loan pricing and contract design across borrowers.",
   },
 ];
 
 const workingPapers = [
   {
-    title: "Who changes their demand for equities during macroeconomic shocks?",
+    title: "Who Changes Their Demand for Equities During Macroeconomic Shocks?",
     summary:
       "Studies how investor types adjust equity demand across macro cycles using GDP growth, inflation, rates, exchange rates, unemployment, and default-premium indicators.",
   },
@@ -83,27 +87,36 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="publications" className="content-section">
-        <h2 className="section-title">Publications</h2>
-        <ul className="list">
-          {publications.map((p) => (
-            <li key={p.title}>
-              <strong>{p.title}</strong>
-              <br />
-              {p.venue}. {p.coauthors}.
-            </li>
-          ))}
-        </ul>
-      </section>
-
       <section id="working-papers" className="content-section">
         <h2 className="section-title">Working Papers</h2>
         <ul className="list">
           {workingPapers.map((paper) => (
             <li key={paper.title}>
-              <strong>{paper.title}</strong>
-              <br />
-              {paper.summary}
+              <span className="paper-title">{paper.title}</span>
+              <ul className="sublist">
+                <li>
+                  <strong>Explanation:</strong> {paper.summary}
+                </li>
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="publications" className="content-section">
+        <h2 className="section-title">Publications</h2>
+        <ul className="list">
+          {publications.map((p) => (
+            <li key={p.title}>
+              <span className="paper-title">{p.title}</span>
+              <ul className="sublist">
+                <li>
+                  <strong>Citation:</strong> {p.venue}. {p.coauthors}.
+                </li>
+                <li>
+                  <strong>Explanation:</strong> {p.explanation}
+                </li>
+              </ul>
             </li>
           ))}
         </ul>
@@ -111,9 +124,9 @@ export default function Home() {
 
       <section id="teaching" className="content-section">
         <h2 className="section-title">Teaching</h2>
-        <p className="bio">Arizona State University</p>
-        <p className="bio">FIN 421 - Security Analysis and Portfolio Management</p>
-        <p className="bio">Principles of Economics (TA), Texas Tech University</p>
+        <ul className="list">
+          <li>Arizona State University - FIN 421: Security Analysis and Portfolio Management (Instructor)</li>
+        </ul>
       </section>
     </section>
   );

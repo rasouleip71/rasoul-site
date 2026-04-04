@@ -140,3 +140,20 @@ a {
 .list strong {
   font-weight: 600;
 }
+
+.section-link {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.paper-title {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.sublist {
+  margin-top: 6px;
+  margin-left: 20px;
+}
