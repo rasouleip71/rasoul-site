@@ -71,7 +71,8 @@ export default function Home() {
           <p className="bio contact-inline">
             Email: <a className="section-link" href="mailto:rossforoughi@gmail.com">rossforoughi@gmail.com</a> |{" "}
             <a className="section-link" href="/CV_Rasoul.pdf" target="_blank" rel="noopener noreferrer">CV</a> |{" "}
-            <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |{" "}
+            <a className="section-link" href="https://www.linkedin.com/in/amir-kazempour-2724b964/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <br />
             Phone: +1 (806) 500-1988
           </p>
