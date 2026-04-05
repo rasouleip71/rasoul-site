@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Headshot from "../public/headshot_tighter2.jpg";
 
-const paperLink =
+const buybackPredictabilityLink =
   "https://openurl.ebsco.com/viewer?sid=ebsco%3Aplink%3Ascholar-a&id=ebsco%3Agcd%3A182205645&crl=c&jrnl=18234992&id_token_hint=eyJraWQiOiIxNzY5MTEwMjQ0MDQ3IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlYXN0bWFpbi5tYWluIiwiZGV2aWNlX2lkIjoiNTU1MDYwYzctNzIwOS00NzJhLThkYzMtZDA2Y2E1N2QyODM1IiwiYW1yIjpbImlwIl0sImlzcyI6Imh0dHBzOlwvXC9hdXRoLmVic2NvLnpvbmVcL2FwaVwvZGlzcGF0Y2hlciIsImNsaWVudF9pZCI6ImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5IiwiYXVkIjpbImh0dHBzOlwvXC9hdXRoLmVic2NvLnpvbmVcL2FwaVwvZGlzcGF0Y2hlciIsImh0dHA6XC9cL2F1dGgtY3h0LW1nci5laG9zdC1saXZlLmVrcy5laG9zdC1saXZlLmVpc2x6LmNvbSIsImh0dHA6XC9cL3hmZi1wcm9jZXNzb3ItamF2YS5laG9zdC1kZXYuZWtzLmVob3N0LWRldnFhLmVpc2x6LmNvbVwvc3dhZ2dlci11aVwvaW5kZXguaHRtbCIsImh0dHBzOlwvXC9hY2Nlc3MtYXBpLmVic2NvLmNvbSIsImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5Il0sImF6cCI6ImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5IiwiaWR0IjoiaW5zdGl0dXRpb25hbCIsImV4cCI6MTc3NTQyNzA1OCwiaWF0IjoxNzc1NDIzNDU4LCJjbGllbnRfbmFtZSI6IldlYmF1dGggLSBOZXcgRURTIGlkX3Rva2VuIiwianRpIjoiZGQzNDE3YzMtOGU4Yy00OTI2LTllODAtNGRkNGZjODgyZDk3IiwidXNlcm5hbWUiOiJJbnN0aXR1dGlvbmFsVXNlciJ9.j1IDLNMtE06BWiceEuuQHD8RsWiOMPuhlwbxFQQEzjonjscF0zM_KOi0Z0DblsKWB0kzWmPjXAZxTvlZT-S2wR45cf_OqXX1uWWbJYutg1eZR2OHfclfR6ljSn62W_-ICZBNyy1Oz1n1Gk0qXBM-g6zc0Hk45VmHCdso1XyX4Tvg667UMGiIbPmVy3PXcqb0kqxRclCuJ0f4DLMjauzZ5t2Kn4dnpAjTywhAWkfO1ns026gsuAXXDZzExoED3acjMu7pqTfPoW-1p4hlLuC5l3wcjPzrOjs6Pgoka1a6vEqX8x0M-9mXVXjiqY9W3KmtvQLjaR6iMSfr1JvHGIrpgA&link_origin=scholar.google.com";
+
+const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905774";
 
 const skills = [
   "Forecasting and nowcasting",
@@ -40,6 +42,13 @@ const workingPapers = [
     title: "Net Buyback Dynamics and Risk",
     summary:
       "Creates a business-cycle exposure factor using the buyback-to-dividend ratio to separate temporary from persistent cash-flow components.",
+    link: netBuybackLink,
+  },
+  {
+    title: "Predictability of Returns with Buyback Cash Flows",
+    summary:
+      "Examines how buyback cash-flow dynamics forecast the cross-section of stock returns.",
+    link: buybackPredictabilityLink,
   },
 ];
 
@@ -81,7 +90,13 @@ export default function Home() {
         <ul className="list">
           {workingPapers.map((paper) => (
             <li key={paper.title}>
-              <span className="paper-title">{paper.title}</span>
+              {paper.link ? (
+                <a className="paper-title section-link" href={paper.link} target="_blank" rel="noopener noreferrer">
+                  {paper.title}
+                </a>
+              ) : (
+                <span className="paper-title">{paper.title}</span>
+              )}
               <ul className="sublist">
                 <li>
                   <strong>Explanation:</strong> {paper.summary}
@@ -108,13 +123,6 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="content-section">
-        <p className="bio">
-          <a className="section-link" href={paperLink} target="_blank" rel="noopener noreferrer">
-            Paper Link
-          </a>
-        </p>
-      </section>
     </section>
   );
 }
