@@ -31,15 +31,15 @@ const workingPapers = [
       "Builds stock-level excess-demand signals from institutional holdings to form return-predictive strategies across horizons from quarters to five years.",
   },
   {
+    title: "Industry News and Future Equity Returns",
+    summary:
+      "Constructs leading return signals for aggregate markets using real-time industry employment, sales, and inventory information.",
+  },
+  {
     title: "Industry ETF Leading Indicator",
     summary:
       "Develops an industry-level leading indicator from quarterly 13F holdings by identifying expert investors and aggregating their positions.",
     link: industryEtfLink,
-  },
-  {
-    title: "Industry News and Future Equity Returns",
-    summary:
-      "Constructs leading return signals for aggregate markets using real-time industry employment, sales, and inventory information.",
   },
   {
     title: "Disagreement Among Institutional Investors and Expected Returns",
