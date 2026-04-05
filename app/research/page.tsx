@@ -22,7 +22,7 @@ const projects = [
       "Developed leading indicators for aggregate equity markets using real-time industry-level data on employment, sales, and inventories.",
   },
   {
-    title: "Cash Flow Cyclicality Index",
+    title: "Net Buyback Dynamics and Risk",
     summary:
       "Constructed a factor capturing firm-level business-cycle exposure using the buyback-to-dividend ratio.",
   },

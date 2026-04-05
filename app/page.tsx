@@ -37,7 +37,7 @@ const workingPapers = [
       "Constructs leading return signals for aggregate markets using real-time industry employment, sales, and inventory information.",
   },
   {
-    title: "Cash Flow Cyclicality Index",
+    title: "Net Buyback Dynamics and Risk",
     summary:
       "Creates a business-cycle exposure factor using the buyback-to-dividend ratio to separate temporary from persistent cash-flow components.",
   },

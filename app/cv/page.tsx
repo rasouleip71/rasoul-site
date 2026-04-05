@@ -80,7 +80,7 @@ export default function CV() {
             markets using real-time industry-level data on employment, sales, and inventories.
           </li>
           <li>
-            <strong>Cash Flow Cyclicality Index:</strong> Constructed a factor capturing firm-level business-cycle
+            <strong>Net Buyback Dynamics and Risk:</strong> Constructed a factor capturing firm-level business-cycle
             exposure using the buyback-to-dividend ratio.
           </li>
         </ul>
