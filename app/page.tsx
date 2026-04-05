@@ -21,42 +21,43 @@ const skills = [
 
 const workingPapers = [
   {
-    title: "Who Changes Their Demand for Equities During Macroeconomic Shocks?",
+    title: "Institutional Equity Demand over Macroeconomic Cycles",
     summary:
-      "Studies how investor types adjust equity demand across macro cycles using GDP growth, inflation, rates, exchange rates, unemployment, and default-premium indicators.",
+      "This paper studies how different types of institutional investors banks, pension funds, insurers, hedge funds, and mutual funds adjust their equity demand in response to macroeconomic conditions. I document heterogeneous responses across investor types and identify which institutions drive equity demand over the business and financial cycle.",
   },
   {
-    title: "Quarterly Excess Demand and Future Returns",
+    title: "Excess Institutional Demand and the Cross-Section of Stock Returns",
     summary:
-      "Builds stock-level excess-demand signals from institutional holdings to form return-predictive strategies across horizons from quarters to five years.",
+      "I develop a demand-system framework to measure stock-level excess demand demand not explained by fundamentals at the investor level and aggregate it into an economy-wide index. The resulting measure strongly predicts the cross-section of future stock returns, highlighting the pricing role of non-fundamental demand.",
   },
   {
-    title: "Industry News and Future Equity Returns",
+    title: "Industry Fundamentals as Leading Indicators for Equity Returns",
     summary:
-      "Constructs leading return signals for aggregate markets using real-time industry employment, sales, and inventory information.",
+      "This paper constructs forward-looking signals for aggregate equity returns using real-time industry-level data. I show that changes in industry fundamentals such as employment, sales, and inventories contain predictive information for future market returns.",
   },
   {
-    title: "Industry ETF Leading Indicator",
+    title: "Informational Content of Institutional Industry Allocation",
     summary:
-      "Develops an industry-level leading indicator from quarterly 13F holdings by identifying expert investors and aggregating their positions.",
+      "Using 13F data, I identify institutional investors with comparative advantage across industries based on the accuracy of their historical allocations. Aggregating their signals, I construct an industry-level predictor that provides leading information for future equity returns.",
     link: industryEtfLink,
   },
   {
     title: "Disagreement Among Institutional Investors and Expected Returns",
     summary:
-      "Uses institutional demand for equity to study the stock cross-section and finds that firms with higher disagreement among institutional investors are associated with lower next-quarter returns.",
+      "I measure disagreement among institutional investors using heterogeneity in equity demand and show that firms with higher disagreement earn lower subsequent returns. The results highlight the role of belief dispersion in shaping expected returns.",
     link: ssrn5527180Link,
   },
   {
     title: "Net Buyback Dynamics and Risk",
     summary:
-      "Creates a business-cycle exposure factor using the buyback-to-dividend ratio to separate temporary from persistent cash-flow components.",
+      "This paper constructs a business-cycle exposure factor using the buyback-to-dividend ratio to distinguish between transitory and persistent cash-flow components. The factor is priced in the cross-section of stock returns, linking payout dynamics to systematic risk.",
+    note: "Revise and Resubmit, Journal of Portfolio Management",
     link: netBuybackLink,
   },
   {
     title: "Predictability of Returns with Buyback Cash Flows",
     summary:
-      "Examines how buyback cash-flow dynamics forecast the cross-section of stock returns.",
+      "Extending the Campbell-Shiller framework to include total shareholder distributions, I show that while dividend yield predicts returns, broader distribution measures better capture variation in future cash flows. The results highlight the importance of repurchases and issuances in asset pricing.",
     link: buybackPredictabilityLink,
   },
 ];
@@ -107,6 +108,11 @@ export default function Home() {
                 <span className="paper-title">{paper.title}</span>
               )}
               <ul className="sublist">
+                {paper.note ? (
+                  <li>
+                    <strong>Status:</strong> {paper.note}
+                  </li>
+                ) : null}
                 <li>
                   <strong>Explanation:</strong> {paper.summary}
                 </li>
