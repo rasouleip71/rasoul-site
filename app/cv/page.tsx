@@ -5,7 +5,7 @@ export default function CV() {
     <section className="page-wrap">
       <h1 className="page-title">Curriculum Vitae</h1>
       <p className="bio">
-        <a className="section-link" href="/CV_Rasoul.pdf" target="_blank" rel="noopener noreferrer">
+        <a className="section-link" href="/CV_Rasoul_ac.pdf" target="_blank" rel="noopener noreferrer">
           Download CV (PDF)
         </a>
       </p>
