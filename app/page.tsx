@@ -6,6 +6,7 @@ const buybackPredictabilityLink =
 
 const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905774";
 const industryEtfLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527101";
+const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
 
 const skills = [
   "Forecasting and nowcasting",
@@ -39,6 +40,11 @@ const workingPapers = [
     title: "Industry News and Future Equity Returns",
     summary:
       "Constructs leading return signals for aggregate markets using real-time industry employment, sales, and inventory information.",
+  },
+  {
+    title: "SSRN Paper (Abstract ID: 5527180)",
+    summary: "Linked SSRN working paper.",
+    link: ssrn5527180Link,
   },
   {
     title: "Net Buyback Dynamics and Risk",
