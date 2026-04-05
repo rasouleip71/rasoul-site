@@ -54,12 +54,6 @@ const workingPapers = [
     note: "Revise and Resubmit, Journal of Portfolio Management",
     link: netBuybackLink,
   },
-  {
-    title: "Predictability of Returns with Buyback Cash Flows",
-    summary:
-      "Extending the Campbell-Shiller framework to include total shareholder distributions, I show that while dividend yield predicts returns, broader distribution measures better capture variation in future cash flows. The results highlight the importance of repurchases and issuances in asset pricing.",
-    link: buybackPredictabilityLink,
-  },
 ];
 
 export default function Home() {
