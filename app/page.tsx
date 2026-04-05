@@ -28,7 +28,7 @@ const workingPapers = [
   {
     title: "Excess Institutional Demand and the Cross-Section of Stock Returns",
     summary:
-      "I develop a demand-system framework to measure stock-level excess demand demand not explained by fundamentals at the investor level and aggregate it into an economy-wide index. The resulting measure strongly predicts the cross-section of future stock returns, highlighting the pricing role of non-fundamental demand.",
+      "I study excess institutional demand and its relation to the cross-section of stock returns by estimating latent demand and constructing measures of demand not explained by fundamentals, and show that this excess demand strongly predicts future returns.",
   },
   {
     title: "Industry Fundamentals as Leading Indicators for Equity Returns",
