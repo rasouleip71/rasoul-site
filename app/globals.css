@@ -97,6 +97,10 @@ a {
   line-height: 1.7;
 }
 
+.bio-spaced {
+  margin-top: 24px;
+}
+
 .list {
   margin: 10px 0 0 22px;
 }

@@ -60,13 +60,10 @@ export default function Home() {
           <h2 id="home" className="section-title">
             Welcome
           </h2>
-          <p className="bio">
-            I am a PhD candidate in Finance at Arizona State University. My research focuses on asset pricing, with an
-            emphasis on forecasting market and industry returns.
-          </p>
-          <p className="bio">
-            I develop and test predictive signals using firm fundamentals, investor holdings, and industry-level
-            economic data across both cross-sectional and time-series settings.
+          <p className="bio">Welcome to my website!</p>
+          <p className="bio bio-spaced">
+            I am a PhD candidate in Finance at Arizona State University. I study empirical asset pricing, institutional
+            demand for equities, and the role of business cycles in financial markets.
           </p>
           <p className="bio contact-inline">
             Email: <a className="section-link" href="mailto:rossforoughi@gmail.com">rossforoughi@gmail.com</a> |{" "}
