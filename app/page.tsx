@@ -42,8 +42,9 @@ const workingPapers = [
       "Constructs leading return signals for aggregate markets using real-time industry employment, sales, and inventory information.",
   },
   {
-    title: "SSRN Paper (Abstract ID: 5527180)",
-    summary: "Linked SSRN working paper.",
+    title: "Disagreement Among Institutional Investors and Expected Returns",
+    summary:
+      "Uses institutional demand for equity to study the stock cross-section and finds that firms with higher disagreement among institutional investors are associated with lower next-quarter returns.",
     link: ssrn5527180Link,
   },
   {
