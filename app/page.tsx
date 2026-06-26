@@ -5,17 +5,6 @@ const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905
 const industryEtfLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527101";
 const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
 
-const skills = [
-  "Forecasting and nowcasting",
-  "Static and dynamic factor models",
-  "Time-series and panel econometrics",
-  "Kalman filtering and smoothing",
-  "Dimensionality reduction (PCA, PLS)",
-  "Demand-system modeling and alpha generation",
-  "Data: CRSP, Compustat, WRDS, 13F, FRED, Bloomberg",
-  "Python (pandas, statsmodels, scikit-learn), Stata",
-];
-
 const workingPapers = [
   {
     title: "Institutional Equity Demand over Macroeconomic Cycles",
@@ -87,7 +76,7 @@ export default function Home() {
       </div>
 
       <section id="working-papers" className="content-section">
-        <h2 className="section-title">Working Papers</h2>
+        <h2 className="section-title">Research</h2>
         <ul className="list">
           {workingPapers.map((paper) => (
             <li key={paper.title}>
@@ -105,7 +94,7 @@ export default function Home() {
                   </li>
                 ) : null}
                 <li>
-                  <strong>Explanation:</strong> {paper.summary}
+                  <strong>Summary:</strong> {paper.summary}
                 </li>
               </ul>
             </li>
@@ -119,16 +108,6 @@ export default function Home() {
           <li>Arizona State University - FIN 421: Security Analysis and Portfolio Management (Instructor)</li>
         </ul>
       </section>
-
-      <section id="skills" className="content-section">
-        <h2 className="section-title">Skills</h2>
-        <ul className="list">
-          {skills.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </section>
-
     </section>
   );
 }
