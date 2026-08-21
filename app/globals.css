@@ -178,3 +178,20 @@ a {
   margin-top: 6px;
   margin-left: 20px;
 }
+
+.teaching-evaluation {
+  margin-top: 22px;
+}
+
+.comments-heading {
+  margin: 16px 0 8px;
+}
+
+.student-comments {
+  margin: 0 0 0 22px;
+  padding-left: 18px;
+}
+
+.student-comments li + li {
+  margin-top: 12px;
+}
