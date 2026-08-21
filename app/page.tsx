@@ -7,9 +7,9 @@ const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=552
 
 const workingPapers = [
   {
-    title: "Institutional Demand and Long-Horizon Returns",
+    title: "Institutional Demand and Long-Horizon Expected Returns",
     summary:
-      "I study excess institutional demand and its relation to the cross-section of stock returns by estimating latent demand and constructing measures of demand not explained by fundamentals, and show that this excess demand strongly predicts future returns.",
+      "This paper studies the long-run dynamics of expected returns associated with institutional demand imbalances. I document three main findings. First, institutional demand imbalances predict stock returns for approximately three years. A one-unit increase in institutional demand is associated with roughly 20 percentage points lower cumulative returns over the subsequent twelve quarters, with return predictability gradually disappearing thereafter. Second, the term structure of the return response is not monotonically declining. Instead, the return response remains approximately constant during the first six quarters, with a one-unit increase in institutional demand associated with roughly 1.5 percentage points lower expected quarterly returns. The response only begins to weaken after the first year and a half and gradually converges toward zero over the subsequent six quarters. Third, institutional demand imbalances are highly persistent, and their return-predictive power is driven by this persistent component rather than by transitory demand innovations. Together, these findings suggest that institutional demand operates as a slow-moving state variable that generates predictable variation in expected returns over long horizons.",
     label: "Job Market Paper",
   },
   {
