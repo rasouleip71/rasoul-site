@@ -105,10 +105,23 @@ export default function Home() {
       <section id="teaching" className="content-section">
         <h2 className="section-title">Teaching Experience</h2>
         <ul className="list">
-          <li>Arizona State University - FIN 421: Security Analysis and Portfolio Management (Instructor)</li>
           <li>
-            Arizona State University - FIN 361: Advanced Managerial Finance (Instructor, Undergraduate, Summer 2026,
-            Mean Student Evaluation: 6.7/7.0)
+            <strong>Security Analysis and Portfolio Management (FIN 421)</strong>
+            <ul className="sublist">
+              <li>Arizona State University, Undergraduate, Fall 2024</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Advanced Managerial Finance (FIN 361)</strong>
+            <ul className="sublist">
+              <li>Arizona State University, Undergraduate, Summer 2026</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Mean Student Evaluation: 6.7/7.0</strong>
+            <ul className="sublist">
+              <li><strong>Comments from students:</strong></li>
+            </ul>
           </li>
         </ul>
       </section>
