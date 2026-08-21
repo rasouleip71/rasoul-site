@@ -7,19 +7,22 @@ const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=552
 
 const workingPapers = [
   {
-    title: "Institutional Equity Demand over Macroeconomic Cycles",
-    summary:
-      "This paper studies how different types of institutional investors banks, pension funds, insurers, hedge funds, and mutual funds adjust their equity demand in response to macroeconomic conditions. I document heterogeneous responses across investor types and identify which institutions drive equity demand over the business and financial cycle.",
-  },
-  {
-    title: "Excess Institutional Demand and the Cross-Section of Stock Returns",
+    title: "Institutional Demand and Long-Horizon Returns",
     summary:
       "I study excess institutional demand and its relation to the cross-section of stock returns by estimating latent demand and constructing measures of demand not explained by fundamentals, and show that this excess demand strongly predicts future returns.",
+    label: "Job Market Paper",
   },
   {
-    title: "Industry Fundamentals as Leading Indicators for Equity Returns",
+    title: "Net Buyback Dynamics and Risk",
     summary:
-      "This paper constructs forward-looking signals for aggregate equity returns using real-time industry-level data. I show that changes in industry fundamentals such as employment, sales, and inventories contain predictive information for future market returns.",
+      "This paper constructs a business-cycle exposure factor using the buyback-to-dividend ratio to distinguish between transitory and persistent cash-flow components. The factor is priced in the cross-section of stock returns, linking payout dynamics to systematic risk.",
+    note: "R&R, Journal of Portfolio Management",
+    link: netBuybackLink,
+  },
+  {
+    title: "Institutional Equity Demand over Macroeconomic Cycles",
+    summary:
+      "This paper studies how different types of institutional investors - banks, pension funds, insurers, hedge funds, and mutual funds - adjust their equity demand in response to macroeconomic conditions. I document heterogeneous responses across investor types and identify which institutions drive equity demand over the business and financial cycle.",
   },
   {
     title: "Informational Content of Institutional Industry Allocation",
@@ -28,17 +31,15 @@ const workingPapers = [
     link: industryEtfLink,
   },
   {
+    title: "Industry Fundamentals as Leading Indicators for Equity Returns",
+    summary:
+      "This paper constructs forward-looking signals for aggregate equity returns using real-time industry-level data. I show that changes in industry fundamentals such as employment, sales, and inventories contain predictive information for future market returns.",
+  },
+  {
     title: "Disagreement Among Institutional Investors and Expected Returns",
     summary:
       "I measure disagreement among institutional investors using heterogeneity in equity demand and show that firms with higher disagreement earn lower subsequent returns. The results highlight the role of belief dispersion in shaping expected returns.",
     link: ssrn5527180Link,
-  },
-  {
-    title: "Net Buyback Dynamics and Risk",
-    summary:
-      "This paper constructs a business-cycle exposure factor using the buyback-to-dividend ratio to distinguish between transitory and persistent cash-flow components. The factor is priced in the cross-section of stock returns, linking payout dynamics to systematic risk.",
-    note: "Revise and Resubmit, Journal of Portfolio Management",
-    link: netBuybackLink,
   },
 ];
 
@@ -88,13 +89,18 @@ export default function Home() {
                 <span className="paper-title">{paper.title}</span>
               )}
               <ul className="sublist">
+                {paper.label ? (
+                  <li>
+                    <strong>{paper.label}</strong>
+                  </li>
+                ) : null}
                 {paper.note ? (
                   <li>
-                    <strong>Status:</strong> {paper.note}
+                    <strong className="paper-status">{paper.note}</strong>
                   </li>
                 ) : null}
                 <li>
-                  <strong>Summary:</strong> {paper.summary}
+                  <strong>Abstract:</strong> {paper.summary}
                 </li>
               </ul>
             </li>
