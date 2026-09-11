@@ -42,7 +42,7 @@ const workingPapers = [
   {
     title: "Disagreement Among Institutional Investors and Expected Returns",
     summary:
-      "I measure disagreement among institutional investors using heterogeneity in equity demand and show that firms with higher disagreement earn lower subsequent returns. The results highlight the role of belief dispersion in shaping expected returns.",
+      "This paper reverse-engineers institutional investors' subjective expectations about the future distribution of asset prices from their observed portfolio holdings. Following a long tradition in the literature, I model frictions as implicit investment taxes and quantify the belief wedges, or implicit taxes on returns, that rationalize deviations between observed holdings and the diversified portfolio implied by a benchmark model. As a first application, I show that dispersion in investors' inferred beliefs positively predicts the cross-section of asset returns, consistent with the presence of asymmetric information among investors. I further examine whether these quantifiable measures of investors' private information help explain the residual variation in cross-sectional returns left unexplained by standard asset characteristics. Preliminary results suggest that they do: ownership-based information appears to contain return-relevant content that is not fully incorporated by the market, an unexpected result in a competitive setting where investors' actions are publicly revealed.",
     link: ssrn5527180Link,
   },
 ];
