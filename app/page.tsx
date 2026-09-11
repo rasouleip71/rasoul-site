@@ -66,7 +66,7 @@ export default function Home() {
             demand for equities, and the role of business cycles in financial markets.
           </p>
           <p className="bio contact-inline">
-            Email: <a className="section-link" href="mailto:rossforoughi@gmail.com">rossforoughi@gmail.com</a> |{" "}
+            Email: <a className="section-link" href="mailto:rforough@asu.edu">rforough@asu.edu</a> |{" "}
             <a className="section-link" href="/CV_Rasoul_ac.pdf" target="_blank" rel="noopener noreferrer">CV</a> |{" "}
             <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |{" "}
             <a className="section-link" href="https://www.linkedin.com/in/rasoul-foroughfard-342500b2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
