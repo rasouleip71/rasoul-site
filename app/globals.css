@@ -183,10 +183,6 @@ a {
   margin-left: 20px;
 }
 
-.teaching-evaluation {
-  margin-top: 22px;
-}
-
 .comments-heading {
   margin: 16px 0 8px;
 }
@@ -198,4 +194,81 @@ a {
 
 .student-comments li + li {
   margin-top: 12px;
+}
+
+.teaching-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.teaching-card {
+  border: 1px solid #dfe5ec;
+  border-left: 4px solid #4f83cc;
+  border-radius: 8px;
+  padding: 17px 20px 15px;
+  background: #fbfcfe;
+  box-shadow: 0 4px 14px rgba(43, 68, 96, 0.06);
+}
+
+.teaching-card h2,
+.teaching-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.teaching-card p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.featured-course {
+  border-left-color: #1a73e8;
+  background: linear-gradient(135deg, #f7fbff, #eef6ff);
+}
+
+.evaluation-card {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: #eaf3ff;
+  border: 1px solid #cfe2fb;
+}
+
+.evaluation-score {
+  color: #1559a6;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.evaluation-label {
+  color: #35516f;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.comments-panel {
+  margin-top: 4px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.comments-panel summary {
+  color: var(--link);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.comments-panel summary:hover {
+  text-decoration: underline;
+}
+
+.comments-panel[open] summary {
+  margin-bottom: 4px;
 }
