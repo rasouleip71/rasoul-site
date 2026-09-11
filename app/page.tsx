@@ -5,7 +5,8 @@ const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905
 const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
-const industrySignalsLink = "/papers/Granular_Industry_Fundamentals_and_Equity_Forecasting.pdf";
+const industrySignalsLink = "/papers/Industry_Level_Signals_from_Institutional_Portfolio_Reallocations.pdf";
+const industryForecastingLink = "/papers/Granular_Industry_Fundamentals_and_Equity_Forecasting.pdf";
 
 const workingPapers = [
   {
@@ -38,6 +39,7 @@ const workingPapers = [
     title: "Granular Industry Fundamentals and Equity Forecasting",
     summary:
       "What can granular industry fundamentals tell us about future equity prices? This paper examines whether real economic information from U.S. industries predicts subsequent equity returns. Using monthly measures of production, employment, hours worked, sales, and inventories across a broad panel of industries, I show that industry-level fundamentals predict both aggregate market returns and industry-level equity returns out of sample. The predictive content is strongest in upstream sectors such as manufacturing, transportation, and mining, suggesting that these industries contain early signals about future economic conditions. Different types of fundamentals convey distinct information: production and sales capture demand conditions, while labor-related measures and inventories reflect adjustment dynamics and uncertainty. Overall, the evidence suggests that granular real economic information is incorporated into equity prices only gradually, making industry fundamentals a useful source of information about expected returns.",
+    link: industryForecastingLink,
   },
   {
     title: "Disagreement Among Institutional Investors and Expected Returns",
