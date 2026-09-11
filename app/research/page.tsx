@@ -69,7 +69,7 @@ export default function Research() {
               {project.note ? (
                 <li><strong className="paper-status">{project.note}</strong></li>
               ) : null}
-              <li><strong>Abstract:</strong> {project.summary}</li>
+              <li><div className="paper-abstract"><strong>Abstract:</strong> {project.summary}</div></li>
               {project.coauthor ? (
                 <li><strong>Co-authored with:</strong> {project.coauthor}</li>
               ) : null}

@@ -100,7 +100,7 @@ export default function Home() {
                   </li>
                 ) : null}
                 <li>
-                  <strong>Abstract:</strong> {paper.summary}
+                  <div className="paper-abstract"><strong>Abstract:</strong> {paper.summary}</div>
                 </li>
                 {paper.coauthor ? (
                   <li>
