@@ -225,6 +225,8 @@ a {
 .student-comments li {
   position: relative;
   padding-left: 18px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .student-comments li::before {
@@ -320,6 +322,10 @@ a {
 
 @media (max-width: 899px) {
   .paper-abstract {
+    text-align: left;
+  }
+
+  .student-comments li {
     text-align: left;
   }
 
