@@ -2,10 +2,10 @@ import Image from "next/image";
 import Headshot from "../public/headshot_tighter2.jpg";
 
 const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905774";
-const industryEtfLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527101";
 const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
+const industrySignalsLink = "/papers/Industry_Level_Signals_from_Institutional_Portfolio_Reallocations.pdf";
 
 const workingPapers = [
   {
@@ -29,10 +29,10 @@ const workingPapers = [
     link: marketRiskPremiaLink,
   },
   {
-    title: "Informational Content of Institutional Industry Allocation",
+    title: "Industry Level Signals from Institutional Portfolio Reallocations",
     summary:
-      "Using 13F data, I identify institutional investors with comparative advantage across industries based on the accuracy of their historical allocations. Aggregating their signals, I construct an industry-level predictor that provides leading information for future equity returns.",
-    link: industryEtfLink,
+      "This paper develops a framework to extract and quantify the information embedded in institutional investors&apos; industry-level demand. Changes in portfolio allocations across industries are interpreted as signals about future returns, and investors are identified as industry experts based on the historical accuracy of their allocation shifts in predicting subsequent industry performance. Aggregating these expert signals yields a novel measure, Revealed Industry Information (RII). I show that RII strongly predicts future industry returns and generates economically significant abnormal performance that cannot be explained by standard asset pricing factors or industry characteristics. A long-short portfolio formed on RII earns a six-factor alpha of 1.6% per quarter after controlling for the Fama-French five factors and momentum.",
+    link: industrySignalsLink,
   },
   {
     title: "Industry Fundamentals as Leading Indicators for Equity Returns",
