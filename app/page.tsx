@@ -72,8 +72,6 @@ export default function Home() {
             <a className="section-link" href="https://www.linkedin.com/in/rasoul-foroughfard-342500b2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <br />
             <span className="contact-affiliation">W. P. Carey School of Business · Arizona State University</span>
-            <br />
-            Phone: +1 (806) 500-1988
           </p>
         </div>
       </div>
