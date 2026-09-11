@@ -5,6 +5,7 @@ const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905
 const industryEtfLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527101";
 const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
+const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
 
 const workingPapers = [
   {
@@ -22,9 +23,10 @@ const workingPapers = [
     link: netBuybackLink,
   },
   {
-    title: "Institutional Equity Demand over Macroeconomic Cycles",
+    title: "Who Responds to Changes in the Market Risk Premia, and How?",
     summary:
-      "This paper studies how different types of institutional investors - banks, pension funds, insurers, hedge funds, and mutual funds - adjust their equity demand in response to macroeconomic conditions. I document heterogeneous responses across investor types and identify which institutions drive equity demand over the business and financial cycle.",
+      "Variation in market risk premia is reflected in the portfolio decisions of only a limited and identifiable subset of institutional investors. Using quarterly 13F holdings, I show that approximately 60% of institutions do not systematically adjust aggregate equity exposure as compensation for bearing market risk changes over time. Among those that do respond, exposure adjustments are highly heterogeneous in both sign and magnitude. To understand what drives these differences in exposure responses, I develop a simple framework in which investment horizons and short-run constraints determine investors&apos; willingness and ability to adjust risk exposure. Consistent with the model&apos;s predictions, low-turnover and long-horizon investors, particularly pension funds, are significantly more likely to increase equity exposure when compensation for risk rises. These findings highlight the importance of a limited, identifiable set of investors who shift capital in response to changing risk compensation, while highlighting the lack of systematic exposure adjustment among the majority of investors.",
+    link: marketRiskPremiaLink,
   },
   {
     title: "Informational Content of Institutional Industry Allocation",
