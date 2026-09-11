@@ -3,13 +3,15 @@ export const metadata = { title: "Research" };
 const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905774";
 const industryEtfLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527101";
 const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
+const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 
 const projects = [
   {
-    title: "Institutional Demand and Long-Horizon Expected Returns",
+    title: "Household Demand Pressure and Equity Mispricing",
     label: "Job Market Paper",
     summary:
-      "This paper studies the long-run stock-price effects of institutional investor demand. I show that excess institutional demand creates persistent variation in expected returns extending up to five years, with a one-standard-deviation increase associated with nearly 40 percentage points lower cumulative returns over that period. Within the five-year horizon, the quarterly term structure of expected returns displays a surprisingly persistent pattern rather than a monotonic decay. For example, the expected return effect associated with excess institutional demand is stronger in the sixth quarter than in the subsequent quarter. Consistent with limits-to-arbitrage, the predictability is strongest among small firms, where a long-short portfolio based on institutional demand earns a five-factor alpha of roughly 3% per quarter. Together, the evidence points to a slow-moving demand channel in asset prices that creates long-run return predictability.",
+      "Household demand shocks generate valuation distortions when the institutional investors absorbing them are insufficiently elastic. I develop a measure of household demand pressure, defined as household latent demand scaled by institutional absorption capacity, and show that it explains both contemporaneous price impacts and long-horizon return reversals. Stocks experiencing greater household demand pressure earn significantly lower subsequent returns for up to five years, with the strongest effects occurring when institutional absorption capacity is limited. Decomposing pressure reveals two distinct channels: innovation pressure drives immediate price increases, whereas persistent pressure accounts for most of the subsequent reversal. The relation survives controls for size, idiosyncratic volatility, analyst coverage, and institutional ownership, indicating that demand-induced mispricing depends critically on the availability of elastic institutional capital.",
+    link: jmpLink,
   },
   {
     title: "Net Buyback Dynamics and Risk",
