@@ -2,7 +2,6 @@ import Image from "next/image";
 import Headshot from "../public/headshot_tighter2.jpg";
 
 const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905774";
-const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
 const industrySignalsLink = "/papers/Industry_Level_Signals_from_Institutional_Portfolio_Reallocations.pdf";
@@ -41,12 +40,6 @@ const workingPapers = [
       "What can granular industry fundamentals tell us about future equity prices? This paper examines whether real economic information from U.S. industries predicts subsequent equity returns. Using monthly measures of production, employment, hours worked, sales, and inventories across a broad panel of industries, I show that industry-level fundamentals predict both aggregate market returns and industry-level equity returns out of sample. The predictive content is strongest in upstream sectors such as manufacturing, transportation, and mining, suggesting that these industries contain early signals about future economic conditions. Different types of fundamentals convey distinct information: production and sales capture demand conditions, while labor-related measures and inventories reflect adjustment dynamics and uncertainty. Overall, the evidence suggests that granular real economic information is incorporated into equity prices only gradually, making industry fundamentals a useful source of information about expected returns.",
     link: industryForecastingLink,
     coauthor: "Elham Ghorbani",
-  },
-  {
-    title: "Disagreement Among Institutional Investors and Expected Returns",
-    summary:
-      "This paper reverse-engineers institutional investors' subjective expectations about the future distribution of asset prices from their observed portfolio holdings. Following a long tradition in the literature, I model frictions as implicit investment taxes and quantify the belief wedges, or implicit taxes on returns, that rationalize deviations between observed holdings and the diversified portfolio implied by a benchmark model. As a first application, I show that dispersion in investors' inferred beliefs positively predicts the cross-section of asset returns, consistent with the presence of asymmetric information among investors. I further examine whether these quantifiable measures of investors' private information help explain the residual variation in cross-sectional returns left unexplained by standard asset characteristics. Preliminary results suggest that they do: ownership-based information appears to contain return-relevant content that is not fully incorporated by the market, an unexpected result in a competitive setting where investors' actions are publicly revealed.",
-    link: ssrn5527180Link,
   },
 ];
 
