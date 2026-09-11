@@ -60,7 +60,7 @@ export default function Home() {
         />
 
         <div className="intro-col">
-          <p id="home" className="bio">Welcome to my website!</p>
+          <p id="home" className="bio welcome-line">Welcome to my website!</p>
           <p className="bio bio-spaced">
             I am a PhD candidate in Finance at Arizona State University. I study empirical asset pricing, institutional
             demand for equities, and the role of business cycles in financial markets.

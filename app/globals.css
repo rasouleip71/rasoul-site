@@ -101,7 +101,14 @@ a {
 }
 
 .bio-spaced {
-  margin-top: 24px;
+  margin-top: 28px;
+}
+
+.welcome-line {
+  color: #1559a6;
+  font-size: 1.28rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .list {
@@ -127,10 +134,12 @@ a {
 .intro-col {
   display: flex;
   flex-direction: column;
+  border-left: 3px solid #d9eaff;
+  padding-left: 22px;
 }
 
 .contact-inline {
-  margin-top: 12px;
+  margin-top: 22px;
 }
 
 @media (min-width: 900px) {
@@ -295,5 +304,12 @@ a {
 @media (max-width: 899px) {
   .paper-abstract {
     text-align: left;
+  }
+
+  .intro-col {
+    border-left: 0;
+    border-top: 3px solid #d9eaff;
+    padding-top: 18px;
+    padding-left: 0;
   }
 }
