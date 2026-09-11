@@ -5,7 +5,7 @@ const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905
 const ssrn5527180Link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5527180";
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
-const industrySignalsLink = "/papers/Industry_Level_Signals_from_Institutional_Portfolio_Reallocations.pdf";
+const industrySignalsLink = "/papers/Granular_Industry_Fundamentals_and_Equity_Forecasting.pdf";
 
 const workingPapers = [
   {
