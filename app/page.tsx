@@ -71,6 +71,8 @@ export default function Home() {
             <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |{" "}
             <a className="section-link" href="https://www.linkedin.com/in/rasoul-foroughfard-342500b2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <br />
+            <span className="contact-affiliation">W. P. Carey School of Business · Arizona State University</span>
+            <br />
             Phone: +1 (806) 500-1988
           </p>
         </div>
@@ -78,9 +80,9 @@ export default function Home() {
 
       <section id="working-papers" className="content-section">
         <h2 className="section-title">Research</h2>
-        <ul className="list">
+        <ul className="list research-list">
           {workingPapers.map((paper) => (
-            <li key={paper.title}>
+            <li className="research-card" key={paper.title}>
               {paper.link ? (
                 <a className="paper-title section-link" href={paper.link} target="_blank" rel="noopener noreferrer">
                   {paper.title}
@@ -91,12 +93,12 @@ export default function Home() {
               <ul className="sublist">
                 {paper.label ? (
                   <li>
-                    <strong>{paper.label}</strong>
+                    <span className="paper-tag">{paper.label}</span>
                   </li>
                 ) : null}
                 {paper.note ? (
                   <li>
-                    <strong className="paper-status">{paper.note}</strong>
+                    <span className="paper-status">{paper.note}</span>
                   </li>
                 ) : null}
                 <li>
@@ -104,7 +106,7 @@ export default function Home() {
                 </li>
                 {paper.coauthor ? (
                   <li>
-                    <strong>Co-authored with:</strong> {paper.coauthor}
+                    <span className="paper-coauthor"><strong>Co-authored with:</strong> {paper.coauthor}</span>
                   </li>
                 ) : null}
               </ul>
@@ -130,7 +132,7 @@ export default function Home() {
           </div>
           <details className="comments-panel">
             <summary>Read student comments</summary>
-            <p className="comments-heading"><strong>Comments from students</strong></p>
+            <p className="comments-heading"><strong>Selected Student Comments</strong></p>
             <ul className="student-comments">
               <li>Rasoul is clear and approachable when explaining difficult finance concepts, which made a real difference in understanding the material. He does a good job breaking down complex topics like valuation, risk, and capital budgeting into manageable pieces. I also appreciate how responsive and supportive he is when students have questions or need clarification outside of class. Flagging important problems or concepts ahead of exams was especially helpful for studying efficiently. His office hours have also been genuinely helpful. He is patient and willing to work through problems step by step rather than just giving quick answers, which makes a big difference when you are stuck. It is clear he wants students to understand the material, not just get through it.</li>
               <li>The lectures were always concise and easy to follow. He always provided a lot of extra help and material for us to use to study. His responsiveness to any message was phenomenal.</li>

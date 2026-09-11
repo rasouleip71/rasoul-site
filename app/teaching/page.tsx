@@ -19,7 +19,7 @@ export default function Teaching() {
         </div>
         <details className="comments-panel">
           <summary>Read student comments</summary>
-          <p className="comments-heading"><strong>Comments from students</strong></p>
+          <p className="comments-heading"><strong>Selected Student Comments</strong></p>
           <ul className="student-comments">
             <li>Rasoul is clear and approachable when explaining difficult finance concepts, which made a real difference in understanding the material. He does a good job breaking down complex topics like valuation, risk, and capital budgeting into manageable pieces. I also appreciate how responsive and supportive he is when students have questions or need clarification outside of class. Flagging important problems or concepts ahead of exams was especially helpful for studying efficiently. His office hours have also been genuinely helpful. He is patient and willing to work through problems step by step rather than just giving quick answers, which makes a big difference when you are stuck. It is clear he wants students to understand the material, not just get through it.</li>
             <li>The lectures were always concise and easy to follow. He always provided a lot of extra help and material for us to use to study. His responsiveness to any message was phenomenal.</li>

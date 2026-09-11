@@ -52,9 +52,9 @@ export default function Research() {
       </p>
 
       <h2 className="section-title">Research</h2>
-      <ul className="list">
+      <ul className="list research-list">
         {projects.map((project) => (
-          <li key={project.title}>
+          <li className="research-card" key={project.title}>
             {project.link ? (
               <a className="paper-title section-link" href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.title}
@@ -64,14 +64,14 @@ export default function Research() {
             )}
             <ul className="sublist">
               {project.label ? (
-                <li><strong>{project.label}</strong></li>
+                <li><span className="paper-tag">{project.label}</span></li>
               ) : null}
               {project.note ? (
-                <li><strong className="paper-status">{project.note}</strong></li>
+                <li><span className="paper-status">{project.note}</span></li>
               ) : null}
               <li><div className="paper-abstract"><strong>Abstract:</strong> {project.summary}</div></li>
               {project.coauthor ? (
-                <li><strong>Co-authored with:</strong> {project.coauthor}</li>
+                <li><span className="paper-coauthor"><strong>Co-authored with:</strong> {project.coauthor}</span></li>
               ) : null}
             </ul>
           </li>
