@@ -39,6 +39,7 @@ const projects = [
     summary:
       "What can granular industry fundamentals tell us about future equity prices? This paper examines whether real economic information from U.S. industries predicts subsequent equity returns. Using monthly measures of production, employment, hours worked, sales, and inventories across a broad panel of industries, I show that industry-level fundamentals predict both aggregate market returns and industry-level equity returns out of sample. The predictive content is strongest in upstream sectors such as manufacturing, transportation, and mining, suggesting that these industries contain early signals about future economic conditions. Different types of fundamentals convey distinct information: production and sales capture demand conditions, while labor-related measures and inventories reflect adjustment dynamics and uncertainty. Overall, the evidence suggests that granular real economic information is incorporated into equity prices only gradually, making industry fundamentals a useful source of information about expected returns.",
     link: industryForecastingLink,
+    coauthor: "Elham Ghorbani",
   },
   {
     title: "Disagreement Among Institutional Investors and Expected Returns",
@@ -76,6 +77,9 @@ export default function Research() {
                 <li><strong className="paper-status">{project.note}</strong></li>
               ) : null}
               <li><strong>Abstract:</strong> {project.summary}</li>
+              {project.coauthor ? (
+                <li><strong>Co-authored with:</strong> {project.coauthor}</li>
+              ) : null}
             </ul>
           </li>
         ))}
