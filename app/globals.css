@@ -76,7 +76,7 @@ a {
 
 .hero-image {
   width: 100%;
-  max-width: 430px;
+  max-width: 400px;
   height: auto;
   object-fit: contain;
   object-position: center top;
@@ -144,7 +144,8 @@ a {
 
 @media (min-width: 900px) {
   .profile-row {
-    grid-template-columns: 370px 1fr;
+    grid-template-columns: 340px 1fr;
+    align-items: center;
   }
 
   .contact-inline {
