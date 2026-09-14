@@ -143,9 +143,12 @@ a {
 }
 
 .contact-links {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 14px;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .icon-link {
@@ -403,6 +406,11 @@ a {
 
   .student-comments li {
     text-align: left;
+  }
+
+  .contact-links {
+    justify-content: flex-start;
+    gap: 12px 18px;
   }
 
   .intro-col {
