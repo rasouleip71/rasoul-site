@@ -120,8 +120,6 @@ export default function Home() {
                 <span>Email</span>
               </a>
             </span>
-            <br />
-            <span className="contact-affiliation">W. P. Carey School of Business · Arizona State University</span>
           </p>
         </div>
       </div>
