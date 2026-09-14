@@ -54,7 +54,7 @@ const workingPapers = [
   {
     title: "Net Buyback Dynamics and Risk",
     summary:
-      "I find that the net buyback-to-dividend ratio classifies firms based on the cyclicality of their cash flow. This is because the permanent component of earnings is usually distributed as dividends, while the temporary component is distributed as buybacks. Their ratio, then, mirrors cash flow&apos;s sensitivity to business cycles. I utilize this ratio to explore potential premiums associated with cash-flow procyclicality. The findings indicate a positive premium associated with buyback-dominated assets. This is attributed to their cash flow exhibiting strong co-variation with the marginal utility of investors, rendering them a riskier option for hedging against consumption and aggregate wealth fluctuations.",
+      "I find that the net buyback-to-dividend ratio classifies firms based on the cyclicality of their cash flow. This is because the permanent component of earnings is usually distributed as dividends, while the temporary component is distributed as buybacks. Their ratio, then, mirrors cash flow's sensitivity to business cycles. I utilize this ratio to explore potential premiums associated with cash-flow procyclicality. The findings indicate a positive premium associated with buyback-dominated assets. This is attributed to their cash flow exhibiting strong co-variation with the marginal utility of investors, rendering them a riskier option for hedging against consumption and aggregate wealth fluctuations.",
     note: "R&R, Journal of Portfolio Management",
     link: netBuybackLink,
   },
