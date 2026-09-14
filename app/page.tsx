@@ -105,15 +105,19 @@ export default function Home() {
             <span className="contact-links">
               <a className="icon-link" href="mailto:rforough@asu.edu" aria-label="Email rforough@asu.edu" title="Email">
                 <ContactIcon type="email" />
+                <span>Email</span>
               </a>
               <a className="icon-link" href="/CV_Rasoul_ac.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CV" title="CV">
                 <ContactIcon type="cv" />
+                <span>CV</span>
               </a>
               <a className="icon-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
                 <ContactIcon type="scholar" />
+                <span>Google Scholar</span>
               </a>
               <a className="icon-link" href="https://www.linkedin.com/in/rasoul-foroughfard-342500b2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
                 <ContactIcon type="linkedin" />
+                <span>LinkedIn</span>
               </a>
             </span>
             <br />
