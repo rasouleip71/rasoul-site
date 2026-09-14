@@ -282,8 +282,12 @@ a {
 }
 
 .paper-coauthor {
-  color: var(--muted);
-  font-size: 0.94rem;
+  display: inline-block;
+  padding: 4px 9px;
+  border-radius: 999px;
+  color: #2e7d32;
+  background: #eaf6ea;
+  font-size: 0.86rem;
 }
 
 .sublist {
