@@ -1,6 +1,42 @@
 import Image from "next/image";
 import Headshot from "../public/headshot_tighter2.jpg";
 
+function ContactIcon({ type }: { type: "email" | "cv" | "scholar" | "linkedin" }) {
+  if (type === "email") {
+    return (
+      <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 5.5h18v13H3z" fill="none" stroke="currentColor" strokeWidth="1.8" />
+        <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      </svg>
+    );
+  }
+
+  if (type === "cv") {
+    return (
+      <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 3h9l3 3v15H6z" fill="none" stroke="currentColor" strokeWidth="1.8" />
+        <path d="M15 3v4h4M9 12h6M9 16h6" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      </svg>
+    );
+  }
+
+  if (type === "scholar") {
+    return (
+      <svg className="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m2 9 10-5 10 5-10 5z" fill="none" stroke="currentColor" strokeWidth="1.8" />
+        <path d="M6 11v5c2.3 2.1 9.7 2.1 12 0v-5M22 9v7" fill="none" stroke="currentColor" strokeWidth="1.8" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg className="contact-icon linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="2" fill="currentColor" />
+      <path d="M7 10v7M7 7.2v.1M11 17v-4c0-2 3.5-2.2 3.5.2V17M11 10v7" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905774";
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
@@ -66,10 +102,20 @@ export default function Home() {
             pricing, investor demand, and the behavior of households and institutions in financial markets.
           </p>
           <p className="bio contact-inline">
-            Email: <a className="section-link" href="mailto:rforough@asu.edu">rforough@asu.edu</a> |{" "}
-            <a className="section-link" href="/CV_Rasoul_ac.pdf" target="_blank" rel="noopener noreferrer">CV</a> |{" "}
-            <a className="section-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |{" "}
-            <a className="section-link" href="https://www.linkedin.com/in/rasoul-foroughfard-342500b2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span className="contact-links">
+              <a className="icon-link" href="mailto:rforough@asu.edu" aria-label="Email rforough@asu.edu" title="Email">
+                <ContactIcon type="email" />
+              </a>
+              <a className="icon-link" href="/CV_Rasoul_ac.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CV" title="CV">
+                <ContactIcon type="cv" />
+              </a>
+              <a className="icon-link" href="https://scholar.google.com/citations?user=7DDb9bQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+                <ContactIcon type="scholar" />
+              </a>
+              <a className="icon-link" href="https://www.linkedin.com/in/rasoul-foroughfard-342500b2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                <ContactIcon type="linkedin" />
+              </a>
+            </span>
             <br />
             <span className="contact-affiliation">W. P. Carey School of Business · Arizona State University</span>
           </p>

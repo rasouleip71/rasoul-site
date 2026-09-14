@@ -147,6 +147,34 @@ a {
   font-size: 0.92rem;
 }
 
+.contact-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon-link {
+  display: inline-flex;
+  color: var(--link);
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.icon-link:hover {
+  color: #1559a6;
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: 900px) {
   .profile-row {
     grid-template-columns: 340px 1fr;
