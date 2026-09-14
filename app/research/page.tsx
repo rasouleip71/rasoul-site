@@ -18,7 +18,7 @@ const projects = [
     title: "Net Buyback Dynamics and Risk",
     note: "R&R, Journal of Portfolio Management",
     summary:
-      "This paper studies the premium associated with firms' cash-flow cyclicality, as reflected in their payout composition. The net buyback-to-dividend ratio classifies firms by cash-flow cyclicality because the permanent component of earnings is typically distributed as dividends, while the temporary component is distributed through buybacks. The ratio therefore captures firms' cash-flow sensitivity to business cycles. I find that this measure proxies for cash-flow procyclicality and that investors require a positive premium for holding buyback-dominated assets.",
+      "This paper studies the premium associated with firms' cash-flow cyclicality by using payout composition as a revealed measure of the persistence of cash flows. I argue that firms distribute the permanent component of cash flows through dividends, while the transitory component is more likely to be paid out through share repurchases. The net buyback-to-dividend ratio therefore provides a proxy for firms' exposure to business cycles. I show that this ratio strongly co-moves with aggregate fluctuations and that buyback-dominated firms earn a positive premium, consistent with investors requiring compensation for holding assets with more cyclical cash flows.",
     link: netBuybackLink,
   },
   {
