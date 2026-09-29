@@ -45,7 +45,7 @@ const industryForecastingLink = "/papers/Granular_Industry_Fundamentals_and_Equi
 
 const workingPapers = [
   {
-    title: "Predictability of Excess Demand",
+    title: "Household Demand Pressure and Equity Mispricing",
     summary:
       "Household demand shocks generate valuation distortions when the institutional investors absorbing them are insufficiently elastic. I develop a measure of household demand pressure, defined as household latent demand scaled by institutional absorption capacity, and show that it explains both contemporaneous price impacts and long-horizon return reversals. Stocks experiencing greater household demand pressure earn significantly lower subsequent returns for up to five years, with the strongest effects occurring when institutional absorption capacity is limited. Decomposing pressure reveals two distinct channels: innovation pressure drives immediate price increases, whereas persistent pressure accounts for most of the subsequent reversal. The relation survives controls for size, idiosyncratic volatility, analyst coverage, and institutional ownership, indicating that demand-induced mispricing depends critically on the availability of elastic institutional capital.",
     label: "Job Market Paper",
