@@ -15,17 +15,16 @@ const projects = [
     link: jmpLink,
   },
   {
-    title: "Net Buyback Dynamics and Risk",
-    note: "R&R, Journal of Portfolio Management",
-    summary:
-      "This paper studies the premium associated with firms' cash-flow cyclicality by using payout composition as a revealed measure of the persistence of cash flows. I argue that firms distribute the permanent component of cash flows through dividends, while the transitory component is more likely to be paid out through share repurchases. The net buyback-to-dividend ratio therefore provides a proxy for firms' exposure to business cycles. I show that this ratio strongly co-moves with aggregate fluctuations and that buyback-dominated firms earn a positive premium, consistent with investors requiring compensation for holding assets with more cyclical cash flows.",
-    link: netBuybackLink,
-  },
-  {
     title: "Who Responds to Changes in the Market Risk Premia, and How?",
     summary:
       "Variation in market risk premia is reflected in the portfolio decisions of only a limited and identifiable subset of institutional investors. Using quarterly 13F holdings, I show that approximately 60% of institutions do not systematically adjust aggregate equity exposure as compensation for bearing market risk changes over time. Among those that do respond, exposure adjustments are highly heterogeneous in both sign and magnitude. To understand what drives these differences in exposure responses, I develop a simple framework in which investment horizons and short-run constraints determine investors' willingness and ability to adjust risk exposure. Consistent with the model's predictions, low-turnover and long-horizon investors, particularly pension funds, are significantly more likely to increase equity exposure when compensation for risk rises. These findings highlight the importance of a limited, identifiable set of investors who shift capital in response to changing risk compensation, while highlighting the lack of systematic exposure adjustment among the majority of investors.",
     link: marketRiskPremiaLink,
+  },
+  {
+    title: "Net Buyback Dynamics and Risk",
+    summary:
+      "This paper studies the premium associated with firms' cash-flow cyclicality by using payout composition as a revealed measure of the persistence of cash flows. I argue that firms distribute the permanent component of cash flows through dividends, while the transitory component is more likely to be paid out through share repurchases. The net buyback-to-dividend ratio therefore provides a proxy for firms' exposure to business cycles. I show that this ratio strongly co-moves with aggregate fluctuations and that buyback-dominated firms earn a positive premium, consistent with investors requiring compensation for holding assets with more cyclical cash flows.",
+    link: netBuybackLink,
   },
   {
     title: "Industry Level Signals from Institutional Portfolio Reallocations",
@@ -65,9 +64,6 @@ export default function Research() {
             <ul className="sublist">
               {project.label ? (
                 <li><span className="paper-tag">{project.label}</span></li>
-              ) : null}
-              {project.note ? (
-                <li><span className="paper-status">{project.note}</span></li>
               ) : null}
               <li><div className="paper-abstract"><strong>Abstract:</strong> {project.summary}</div></li>
               {project.coauthor ? (
