@@ -45,7 +45,7 @@ const industryForecastingLink = "/papers/Granular_Industry_Fundamentals_and_Equi
 
 const workingPapers = [
   {
-    title: "Household Demand Pressure and Equity Mispricing",
+    title: "Household Demand Dynamics and Equity Mispricing",
     summary:
       "This paper studies equity mispricing associated with household demand for individual stocks. Conceptually, household demand shocks generate larger valuation distortions when less elastic institutional capital is available to absorb them. To quantify this mechanism, I construct a Price Impact Multiplier as the inverse of the weighted-average demand elasticity of a stock's institutional holders. Multiplying a household demand shock by this multiplier yields its implied price impact, accounting for the elastic institutional capital available to absorb it. Empirically, household demand shocks scaled by the Price Impact Multiplier capture cross-sectional variation in equity mispricing over both short and long horizons. Portfolios sorted on the resulting implied price impact generate abnormal return spreads of 1.36% over the subsequent quarter and 3.90% over the subsequent year.",
     label: "Job Market Paper",
