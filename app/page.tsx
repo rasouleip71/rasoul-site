@@ -41,6 +41,7 @@ const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 const investorDemandLink = "/papers/Investor_Demand_and_Dynamic_Characteristic_Compensations.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
+const buybackCashFlowsLink = "https://openurl.ebsco.com/EPDB%3Agcd%3A6%3A21636358/detailv2?sid=ebsco%3Aplink%3Acrawler-gcd&id=ebsco%3Agcd%3A182205645&crl=c&jrnl=18234992&link_origin=scholar.google.com";
 
 const workingPapers = [
   {
@@ -74,6 +75,7 @@ const workingPapers = [
     summary:
       "This paper re-evaluates return and cash flow predictability, extending beyond dividends to include repurchases and issuance cash flows. Employing total distribution in the Campbell-Schiller decomposition, I examine how prices respond to discount-rate and cash-flow-growth changes. Contrary to conventional wisdom, the results indicate that while dividend yield predicts returns, distribution yield, encompassing all distributions, emerges as a more effective predictor of future cash flows. This challenges established literature, emphasizing the significance of considering all cash-flow components in asset pricing analyses.",
     note: "First-year summer paper. Published in the Asian Academy of Management.",
+    link: buybackCashFlowsLink,
   },
 ];
 
