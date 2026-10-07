@@ -39,22 +39,28 @@ function ContactIcon({ type }: { type: "email" | "cv" | "scholar" | "linkedin" }
 
 const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905774";
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
+const investorDemandLink = "/papers/Investor_Demand_and_Dynamic_Characteristic_Compensations.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
-const industrySignalsLink = "/papers/Industry_Level_Signals_from_Institutional_Portfolio_Reallocations.pdf";
-const industryForecastingLink = "/papers/Granular_Industry_Fundamentals_and_Equity_Forecasting.pdf";
 
 const workingPapers = [
   {
     title: "Household Demand Dynamics and Equity Mispricing",
     summary:
-      "This paper studies equity mispricing associated with household demand for individual stocks. Conceptually, household demand shocks generate larger valuation distortions when less elastic institutional capital is available to absorb them. To quantify this mechanism, I construct a Price Impact Multiplier, which is the inverse of a stock's institutional absorption capacity and measures the model-implied price adjustment required for institutions to absorb a one-unit household demand shock. Empirically, household demand shocks scaled by the Price Impact Multiplier capture cross-sectional variation in equity mispricing over both short and long horizons. Long-short portfolios sorted on the resulting implied price impact generate abnormal return spreads of 1.36% over the subsequent quarter and 3.90% over the subsequent year.",
+      "Household demand shocks to individual stocks generate larger valuation distortions when the institutional investors holding the stock have lower capacity to absorb the shocks. I measure stock-level absorption capacity as the inverse of the average price elasticity of demand among institutions holding the stock before the shock occurs, and find that limited institutional absorption capacity amplifies the price impact of otherwise similar household demand shocks. Specifically, a household demand shock generates a larger contemporaneous and subsequent price impact when the stock is held primarily by institutions with lower price elasticity of demand, and therefore lower capacity to absorb the shock. The resulting mispricing is economically meaningful: stocks with higher household demand shocks, and lower absorption capacity earn abnormal returns of about 1.36% per quarter in the short run and about 3.90% per year, and the price impact persists for up to three years with a non-monotonically declining term structure.",
     label: "Job Market Paper",
     link: jmpLink,
   },
   {
+    title: "Investor Demand and Dynamic Characteristic Compensations",
+    summary:
+      "Standard factor models and theories fail to explain the compensation discrepancy between persistent and transitory components of firm characteristics. We examine which drivers of investors' portfolio allocation choices contribute to the discrepancy by decomposing returns of characteristic-sorted portfolios into different demand-driven components: persistent demand shocks, which reflect idiosyncratic drivers such as emotion and liquidity needs, and demand for current and lagged characteristics, which reflect systematic drivers such as investment mandates and trading costs. We find that persistent demand shocks and demand for characteristics contribute significantly and oppositely to the discrepancy. Further, we provide new evidence that investors have a negative correlation between their demand for current and lagged characteristics.",
+    link: investorDemandLink,
+    coauthor: "Shuhao Ren",
+  },
+  {
     title: "Who Responds to Changes in the Market Risk Premia, and How?",
     summary:
-      "Variation in market risk premia is reflected in the portfolio decisions of only a limited and identifiable subset of institutional investors. Using quarterly 13F holdings, I show that approximately 60% of institutions do not systematically adjust aggregate equity exposure as compensation for bearing market risk changes over time. Among those that do respond, exposure adjustments are highly heterogeneous in both sign and magnitude. To understand what drives these differences in exposure responses, I develop a simple framework in which investment horizons and short-run constraints determine investors' willingness and ability to adjust risk exposure. Consistent with the model's predictions, low-turnover and long-horizon investors, particularly pension funds, are significantly more likely to increase equity exposure when compensation for risk rises. These findings highlight the importance of a limited, identifiable set of investors who shift capital in response to changing risk compensation, while highlighting the lack of systematic exposure adjustment among the majority of investors.",
+      "Variation in market risk premia is reflected in the portfolio decisions of only a limited and identifiable subset of institutional investors. Using quarterly 13F holdings, I show that approximately 60% of institutions do not systematically adjust aggregate equity exposure as compensation for bearing market risk changes over time. Among those that do respond, exposure adjustments are highly heterogeneous in both sign and magnitude. To understand what drives these differences in exposure responses, I develop a simple framework in which investment horizons and short-run constraints determine investors' willingness and ability to adjust risk exposure. Consistent with the model's predictions, low-turnover and long-horizon investors, particularly pension funds, are significantly more likely to increase equity exposure when compensation for risk raises. These findings highlight the importance of a limited, identifiable set of investors who shift capital in response to changing risk compensation, while highlighting the lack of systematic exposure adjustment among majority of investors.",
     link: marketRiskPremiaLink,
   },
   {
@@ -64,17 +70,10 @@ const workingPapers = [
     link: netBuybackLink,
   },
   {
-    title: "Industry Level Signals from Institutional Portfolio Reallocations",
+    title: "Predictability of Returns with Buyback Cash Flows",
     summary:
-      "This paper develops a framework to extract and quantify the information embedded in institutional investors' industry-level demand. Changes in portfolio allocations across industries are interpreted as signals about future returns, and investors are identified as industry experts based on the historical accuracy of their allocation shifts in predicting subsequent industry performance. Aggregating these expert signals yields a novel measure, Revealed Industry Information (RII). I show that RII strongly predicts future industry returns and generates economically significant abnormal performance that cannot be explained by standard asset pricing factors or industry characteristics. A long-short portfolio formed on RII earns a six-factor alpha of 1.6% per quarter after controlling for the Fama-French five factors and momentum.",
-    link: industrySignalsLink,
-  },
-  {
-    title: "Granular Industry Fundamentals and Equity Forecasting",
-    summary:
-      "What can granular industry fundamentals tell us about future equity prices? This paper examines whether real economic information from U.S. industries predicts subsequent equity returns. Using monthly measures of production, employment, hours worked, sales, and inventories across a broad panel of industries, we show that industry-level fundamentals forecast both industry-level equity returns and aggregate market returns, about 4.5 percent, out of sample. The predictive content is strongest in upstream sectors such as manufacturing, transportation, and mining, suggesting that these industries contain early signals about future economic conditions. Different types of fundamentals convey distinct information: production and sales capture demand conditions, while labor-related measures and inventories reflect adjustment dynamics and uncertainty. Overall, the evidence suggests that granular real economic information is incorporated into equity prices only gradually, making industry fundamentals a useful source of information about expected returns.",
-    link: industryForecastingLink,
-    coauthor: "Elham Ghorbani",
+      "This paper re-evaluates return and cash flow predictability, extending beyond dividends to include repurchases and issuance cash flows. Employing total distribution in the Campbell-Schiller decomposition, I examine how prices respond to discount-rate and cash-flow-growth changes. Contrary to conventional wisdom, the results indicate that while dividend yield predicts returns, distribution yield, encompassing all distributions, emerges as a more effective predictor of future cash flows. This challenges established literature, emphasizing the significance of considering all cash-flow components in asset pricing analyses.",
+    note: "First-year summer paper. Published in the Asian Academy of Management.",
   },
 ];
 
@@ -141,6 +140,11 @@ export default function Home() {
                     <span className="paper-tag">{paper.label}</span>
                   </li>
                 ) : null}
+                {paper.note ? (
+                  <li>
+                    <span className="paper-status">{paper.note}</span>
+                  </li>
+                ) : null}
                 <li>
                   <div className="paper-abstract"><strong>Abstract:</strong> {paper.summary}</div>
                 </li>
@@ -160,11 +164,21 @@ export default function Home() {
         <div className="teaching-grid">
           <article className="teaching-card">
             <h3>Security Analysis and Portfolio Management (FIN 421)</h3>
-            <p>Arizona State University · Undergraduate · Fall 2024</p>
+            <p>Arizona State University · Undergraduate · Instructor of Record · Fall 2024</p>
           </article>
           <article className="teaching-card featured-course">
             <h3>Advanced Managerial Finance (FIN 361)</h3>
-            <p>Arizona State University · Undergraduate · Summer 2026</p>
+            <p>Arizona State University · Undergraduate · Instructor of Record · Summer 2026</p>
+          </article>
+          <article className="teaching-card">
+            <h3>Investment Strategies (FIN 525)</h3>
+            <p>Arizona State University · MBA · Teaching Assistant · Summers 2022-2026</p>
+            <p>Facilitated and managed course-related discussions through Yellowdig.</p>
+          </article>
+          <article className="teaching-card">
+            <h3>Theory of Finance (FIN 781)</h3>
+            <p>Arizona State University · Ph.D. · Teaching Assistant · Falls 2022-2026</p>
+            <p>Graded assignments on expected utility, risk aversion, stochastic dominance, mean-variance analysis, APT, and options.</p>
           </article>
           <div className="evaluation-card">
             <div className="evaluation-score">6.7/7.0</div>

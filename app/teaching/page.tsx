@@ -7,11 +7,21 @@ export default function Teaching() {
       <div className="teaching-grid">
         <article className="teaching-card">
           <h2>Security Analysis and Portfolio Management (FIN 421)</h2>
-          <p>Arizona State University · Undergraduate · Fall 2024</p>
+          <p>Arizona State University · Undergraduate · Instructor of Record · Fall 2024</p>
         </article>
         <article className="teaching-card featured-course">
           <h2>Advanced Managerial Finance (FIN 361)</h2>
-          <p>Arizona State University · Undergraduate · Summer 2026</p>
+          <p>Arizona State University · Undergraduate · Instructor of Record · Summer 2026</p>
+        </article>
+        <article className="teaching-card">
+          <h2>Investment Strategies (FIN 525)</h2>
+          <p>Arizona State University · MBA · Teaching Assistant · Summers 2022-2026</p>
+          <p>Facilitated and managed course-related discussions through Yellowdig.</p>
+        </article>
+        <article className="teaching-card">
+          <h2>Theory of Finance (FIN 781)</h2>
+          <p>Arizona State University · Ph.D. · Teaching Assistant · Falls 2022-2026</p>
+          <p>Graded assignments on expected utility, risk aversion, stochastic dominance, mean-variance analysis, APT, and options.</p>
         </article>
         <div className="evaluation-card">
           <div className="evaluation-score">6.7/7.0</div>
@@ -29,11 +39,6 @@ export default function Teaching() {
           </ul>
         </details>
       </div>
-      <h2>Earlier Teaching</h2>
-      <ul className="list">
-        <li>Mathematics (TA), Persian Gulf University (2013)</li>
-        <li>Macroeconomics (TA), Persian Gulf University (2012)</li>
-      </ul>
     </section>
   );
 }
