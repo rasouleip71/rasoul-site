@@ -98,8 +98,15 @@ export default function Home() {
         <div className="intro-col">
           <p id="home" className="bio welcome-line">Welcome to my website!</p>
           <p className="bio bio-spaced">
-            I am a PhD candidate in Finance at Arizona State University. My research focuses on empirical asset
-            pricing, investor demand, and the behavior of households and institutions in financial markets.
+            I am a PhD candidate in Finance at Arizona State University. My research interests are in asset pricing,
+            financial institutions, and household finance. I study how households and institutions demand equities,
+            how their portfolio decisions respond to firm-level information and macroeconomic conditions, and how
+            those decisions shape equity prices.
+          </p>
+          <p className="bio research-interests-link">
+            <a className="section-link" href="/research#research-interests">
+              Read more about my research interests
+            </a>
           </p>
           <p className="bio contact-inline">
             <span className="contact-links">

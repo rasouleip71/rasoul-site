@@ -104,6 +104,11 @@ a {
   margin-top: 28px;
 }
 
+.research-interests-link {
+  margin-top: 4px;
+  font-size: 0.96rem;
+}
+
 .welcome-line {
   color: #1559a6;
   font-size: 1.28rem;
@@ -194,6 +199,45 @@ a {
 
 .content-section {
   margin-top: 28px;
+}
+
+.research-interests {
+  margin-bottom: 30px;
+}
+
+.research-interests-panel {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border: 1px solid #dfe5ec;
+  border-left: 4px solid #9fc5ef;
+  border-radius: 8px;
+  background: #fbfcfe;
+  box-shadow: 0 4px 14px rgba(43, 68, 96, 0.05);
+}
+
+.research-interests-panel summary {
+  color: var(--link);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.research-interests-panel summary:hover {
+  text-decoration: underline;
+}
+
+.research-interests-copy {
+  margin-top: 14px;
+}
+
+.research-interests-copy p {
+  margin: 0;
+  line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.research-interests-copy p + p {
+  margin-top: 12px;
 }
 
 .section-title {
@@ -405,6 +449,10 @@ a {
 
 @media (max-width: 899px) {
   .paper-abstract {
+    text-align: left;
+  }
+
+  .research-interests-copy p {
     text-align: left;
   }
 

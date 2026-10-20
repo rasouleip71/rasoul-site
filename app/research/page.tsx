@@ -46,10 +46,48 @@ export default function Research() {
   return (
     <section className="page-wrap">
       <h1 className="page-title">Research</h1>
-      <p className="bio">
-        My research program studies equity demand, business-cycle dynamics, and return predictability through signal
-        engineering and portfolio formation.
-      </p>
+      <section id="research-interests" className="research-interests">
+        <h2 className="section-title">Research Interests</h2>
+        <p className="bio">
+          My research lies at the intersection of asset pricing, financial institutions, and household finance. I study
+          how household, retail, and institutional demand for equities responds to firm-level information and
+          macroeconomic conditions, and how those portfolio decisions shape prices and expected returns.
+        </p>
+        <details className="research-interests-panel">
+          <summary>Read more about my research interests</summary>
+          <div className="research-interests-copy">
+            <p>
+              My work examines investor demand at both the firm and aggregate level. I am particularly interested in
+              how heterogeneous investors adjust their portfolios in response to fundamentals, prices, and changes in
+              the macroeconomic environment, and in what those adjustments reveal about the formation of equity
+              prices.
+            </p>
+            <p>
+              In my job market paper, I study the price effects of household demand for individual stocks. Household
+              portfolio choices are highly persistent: an autoregressive specification explains roughly 70% of the
+              variation in stock-level household demand. Demand shocks are associated with an immediate increase in
+              prices followed by mean reversion, while the predictable component of household demand is associated
+              with longer-run underperformance. The price impact is larger when the institutional investors holding a
+              stock have lower demand elasticity and are therefore less able to absorb household demand shocks.
+            </p>
+            <p>
+              In related work, I study how institutional investors change their equity positions across cash-flow,
+              credit, and business-cycle conditions, proxied by dividend yields, term spreads, and default spreads. I
+              examine how investment horizon, financial condition, and investor type shape these portfolio responses.
+            </p>
+            <p>
+              I also study firms&apos; payout choices, with particular attention to buybacks, dividends, and issuance cash
+              flows. These projects examine what payout composition reveals about cash-flow persistence, business-cycle
+              exposure, and expected returns.
+            </p>
+            <p>
+              Finally, I study how granular industry news - including employment, production, sales, and inventories -
+              predicts aggregate and industry-level equity returns. I identify systematic industries whose real activity
+              contains leading information for other sectors and the broader equity market.
+            </p>
+          </div>
+        </details>
+      </section>
 
       <h2 className="section-title">Research</h2>
       <ul className="list research-list">
