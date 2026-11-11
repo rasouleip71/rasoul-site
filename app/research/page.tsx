@@ -4,7 +4,6 @@ const netBuybackLink = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905
 const jmpLink = "/papers/The_Pricing_of_Household_Demand_when_Institutions_Are_Inelastic.pdf";
 const investorDemandLink = "/papers/Investor_Demand_and_Dynamic_Characteristic_Compensations.pdf";
 const marketRiskPremiaLink = "/papers/Who_Responds_to_Changes_in_the_Market_Risk_Premia_and_How.pdf";
-const buybackCashFlowsLink = "https://openurl.ebsco.com/EPDB%3Agcd%3A6%3A21636358/detailv2?sid=ebsco%3Aplink%3Acrawler-gcd&id=ebsco%3Agcd%3A182205645&crl=c&jrnl=18234992&link_origin=scholar.google.com";
 
 const projects = [
   {
@@ -12,7 +11,14 @@ const projects = [
     summary:
       "Household demand shocks to individual stocks generate larger valuation distortions when the institutional investors holding the stock have lower capacity to absorb the shocks. I measure stock-level absorption capacity as the inverse of the average price elasticity of demand among institutions holding the stock before the shock occurs, and find that limited institutional absorption capacity amplifies the price impact of otherwise similar household demand shocks. Specifically, a household demand shock generates a larger contemporaneous and subsequent price impact when the stock is held primarily by institutions with lower price elasticity of demand. The resulting mispricing is economically meaningful: stocks with higher household demand shocks, and lower absorption capacity earn abnormal returns of about 1.36% quarterly and about 3.90% annually, and this price impact persists for up to three years with a non-monotonically declining term structure.",
     label: "Job Market Paper",
+    note: "Accepted for presentation at the 2027 Southwestern Finance Association Annual Meeting.",
     link: jmpLink,
+  },
+  {
+    title: "Who Responds to Changes in the Market Risk Premia, and How?",
+    summary:
+      "Variation in market risk premia is reflected in the portfolio decisions of only a limited and identifiable subset of institutional investors. Using quarterly 13F holdings, I show that approximately 60% of institutions do not systematically adjust aggregate equity exposure as compensation for bearing market risk changes over time. Among those that do respond, exposure adjustments are highly heterogeneous in both sign and magnitude. To understand what drives these differences in exposure responses, I develop a simple framework in which investment horizons and short-run constraints determine investors' willingness and ability to adjust risk exposure. Consistent with the model's predictions, low-turnover and long-horizon investors, particularly pension funds, are significantly more likely to increase equity exposure when compensation for risk raises. These findings highlight the importance of a limited, identifiable set of investors who shift capital in response to changing risk compensation, while highlighting the lack of systematic exposure adjustment among majority of investors.",
+    link: marketRiskPremiaLink,
   },
   {
     title: "Investor Demand and Dynamic Characteristic Compensations",
@@ -22,23 +28,10 @@ const projects = [
     coauthor: "Shuhao Ren",
   },
   {
-    title: "Who Responds to Changes in the Market Risk Premia, and How?",
-    summary:
-      "Variation in market risk premia is reflected in the portfolio decisions of only a limited and identifiable subset of institutional investors. Using quarterly 13F holdings, I show that approximately 60% of institutions do not systematically adjust aggregate equity exposure as compensation for bearing market risk changes over time. Among those that do respond, exposure adjustments are highly heterogeneous in both sign and magnitude. To understand what drives these differences in exposure responses, I develop a simple framework in which investment horizons and short-run constraints determine investors' willingness and ability to adjust risk exposure. Consistent with the model's predictions, low-turnover and long-horizon investors, particularly pension funds, are significantly more likely to increase equity exposure when compensation for risk raises. These findings highlight the importance of a limited, identifiable set of investors who shift capital in response to changing risk compensation, while highlighting the lack of systematic exposure adjustment among majority of investors.",
-    link: marketRiskPremiaLink,
-  },
-  {
     title: "Net Buyback Dynamics and Risk",
     summary:
-      "This paper studies the premium associated with firms' cash-flow cyclicality by using payout composition as a revealed measure of the persistence of cash flows. I argue that firms distribute the permanent component of cash flows through dividends, while the transitory component is more likely to be paid out through share repurchases. The net buyback-to-dividend ratio therefore provides a proxy for firms' exposure to business cycles. I show that this ratio strongly co-moves with aggregate fluctuations and that buyback-dominated firms earn a positive premium, consistent with investors requiring compensation for holding assets with more cyclical cash flows.",
+      "This paper provides a risk-based explanation for the anomalous returns associated with share repurchases and equity issuance. Unlike dividends, repurchase and issuance cash flows are highly cyclical, exposing investors more strongly to fluctuations in aggregate consumption and marginal utility. I measure this exposure using a firm-level consumption beta based on the covariance between the net buyback-to-dividend ratio and consumption growth. Fama-MacBeth regressions show that firms with higher consumption betas earn higher subsequent returns, consistent with compensation for greater consumption risk. The findings connect corporate payout policy and the buyback anomaly to household hedging motives and the pricing of marginal-utility risk.",
     link: netBuybackLink,
-  },
-  {
-    title: "Predictability of Returns with Buyback Cash Flows",
-    summary:
-      "This paper re-evaluates return and cash flow predictability, extending beyond dividends to include repurchases and issuance cash flows. Employing total distribution in the Campbell-Schiller decomposition, I examine how prices respond to discount-rate and cash-flow-growth changes. Contrary to conventional wisdom, the results indicate that while dividend yield predicts returns, distribution yield, encompassing all distributions, emerges as a more effective predictor of future cash flows. This challenges established literature, emphasizing the significance of considering all cash-flow components in asset pricing analyses.",
-    note: "First-year summer paper. Published in the Asian Academy of Management.",
-    link: buybackCashFlowsLink,
   },
 ];
 
