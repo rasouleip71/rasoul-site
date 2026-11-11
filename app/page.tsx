@@ -96,11 +96,6 @@ export default function Home() {
             how their portfolio decisions respond to firm-level information and macroeconomic conditions, and how
             those decisions shape equity prices.
           </p>
-          <p className="bio research-interests-link">
-            <a className="section-link" href="/research#research-interests">
-              Read more about my research interests
-            </a>
-          </p>
           <p className="bio contact-inline">
             <span className="contact-links">
               <a className="icon-link" href="/CV_Rasoul_ac.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CV" title="CV">
