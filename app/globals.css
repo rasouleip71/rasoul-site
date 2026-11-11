@@ -447,6 +447,12 @@ a {
   margin-bottom: 4px;
 }
 
+.teaching-video-link {
+  margin: 18px 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 @media (max-width: 899px) {
   .paper-abstract {
     text-align: left;

@@ -205,6 +205,11 @@ export default function Home() {
             </ul>
           </details>
         </div>
+        <p className="teaching-video-link">
+          <a className="section-link" href="/videos/teaching-how-to-value-nike.mp4" target="_blank" rel="noopener noreferrer">
+            A Video of Me Teaching How to Value Nike
+          </a>
+        </p>
       </section>
     </section>
   );
