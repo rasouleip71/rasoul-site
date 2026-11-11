@@ -91,8 +91,8 @@ export default function Home() {
         <div className="intro-col">
           <p id="home" className="bio welcome-line">Welcome to my website!</p>
           <p className="bio bio-spaced">
-            I am a PhD candidate in Finance at Arizona State University. My research interests are in asset pricing,
-            financial institutions, and household finance. I study how households and institutions demand equities,
+            I am a PhD candidate in Finance at Arizona State University. My research interests are in asset pricing
+            and financial institutions. I study how households and institutions demand equities,
             how their portfolio decisions respond to firm-level information and macroeconomic conditions, and how
             those decisions shape equity prices.
           </p>
